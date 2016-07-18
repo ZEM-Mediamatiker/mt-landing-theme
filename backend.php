@@ -114,34 +114,12 @@
 
         <!-- The tab navigation -->
         <ul class="nav navbar-nav">
-          <li class="dropdown current yamm-fw">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Mediathek <span class="sr-only">current page</span></a>
-          </li>
           <li class="dropdown yamm-fw">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Links</a>
-            <ul class="dropdown-menu" role="menu">
-              <!-- The `li` presence heritated from the classic dropdown structure, only one in that case -->
-              <li>
-                <!-- The `yamm-content` can contain any kind of content like tab, table, list, article... -->
-                <div class="yamm-content container-fluid">
-                  <div class="row">
-                    <div class="col-md-4">
-                      <h3>Fotoportal</h3>
-                      <p>Wichtige Links zum Fotoportal:<br>
-                          <a href="http://digame.zem.ch" target="_blank">Handbuch</a><br>
-                        <a href="https://www.digame.mediathek.admin.ch/" target="_blank">Verwaltung</a>
-                        
-                        </p>
-                    </div>
-                      
-                    <div class="col-md-4">
-                      <h3></h3>
-                      
-                    </div>
-                  </div>
-                </div><!-- `yamm-content` end -->
-              </li><!-- Dropdown `li` end -->
-            </ul><!-- Dropdown `ul` end -->
+            <a href="index.php" class="dropdown-toggle">Mediathek Frontend <span class="sr-only">current page</span></a>
+          </li>
+          <li class="dropdown current yamm-fw">
+            <a href="backend.php" class="dropdown-toggle">Mediathek Backend</a>
+            
           </li>
           
           
@@ -170,7 +148,7 @@
             
         <div class="container-fluid">
         
-            <h1 class="page-title centered">Willkommen in der Mediathek!</h1>
+            <h1 class="page-title centered">Mediathek Backend</h1>
             
         <div id="content" class="col-sm-12">
             <div class="row">
@@ -184,13 +162,13 @@
                     <div class="row">
                       <div class="col-sm-12">
                         <p>
-                          <img src="img/videoportal.jpg" alt="Image description">
+                          <img src="img/digame.jpg" alt="Image description">
                         </p>
-                        <h2><a href="#">Videoportal</a></h2>
+                        <h2><a href="#">DIGAME</a></h2>
                         <p>
                       Im Videoportal finden Sie Videos zu den Themen Verteidigung, Bevölkerungsschutz und Sport.
                           </p>
-                        <a href="https://vp.zem.ch/startseite/" target="_blank" type="button" class="btn btn-primary">Videoportal besuchen</a>
+                        <a href="https://www.digame.mediathek.admin.ch/" target="_blank" type="button" class="btn btn-primary">DIGAME aufrufen</a>
                       </div>
                     </div>
                   </div>
@@ -205,13 +183,13 @@
                     <div class="row">
                       <div class="col-sm-12">
                         <p>
-                          <img src="img/fotoportal.jpg" alt="Image description">
+                          <img src="img/handbuch.jpg" alt="Image description">
                         </p>
-                        <h2><a href="#">Fotoportal</a></h2>
+                        <h2><a href="#">Handbuch</a></h2>
                         <p>
                       Im Fotoportal finden Sie Bilder zu den Themen Verteidigung, Bevölkerungsschutz und Sport.
                           </p>
-                        <a href="https://www.mediathek.admin.ch" target="_blank" type="button" class="btn btn-primary">Fotoportal besuchen</a>
+                        <a href="http://digame.zem.ch" target="_blank" type="button" class="btn btn-primary">Handbuch öffnen</a>
                       </div>
                     </div>
                   </div>
@@ -221,70 +199,9 @@
             
             </div> 
             
-            <div class="row">
-                
-                <div class="col-md-4 centered">
-                  <div class="list-group">
-                    <!--<div class="list-group-header">
-                      <h2 class="pull-left">Videoportal</h2>
-                    </div>-->
-
-                    <div class="row">
-                      <div class="col-sm-12">
-                        <p class="icon"></p>
-                        <p>
-                            YouTube-Kanal der Schweizer Armee.
-                        </p>
-                        <a href="https://vp.zem.ch/startseite/" type="button" class="btn btn-primary">YouTube</a>
-                      </div>          
-                        
-                    </div>
-                  </div>
-                </div>
-                
-                <div class="col-md-4 centered">
-                  <div class="list-group">
-                    <!--<div class="list-group-header">
-                      <h2 class="pull-left">Videoportal</h2>
-                    </div>-->
-
-                    <div class="row">
-                      <div class="col-sm-12">
-                        <p class="icon"></p>
-                        <p>
-                            iTunes-Channel der Schweizer Armee.
-                        </p>
-                        <a href="https://itunes.apple.com/ch/podcast/info-schweizer-armee/id448622473" type="button" class="btn btn-primary">iTunes</a>
-                      </div>          
-                        
-                    </div>
-                  </div>
-                </div>
-                
-                
-                <div class="col-md-4 centered">
-                  <div class="list-group">
-                    <!--<div class="list-group-header">
-                      <h2 class="pull-left">Videoportal</h2>
-                    </div>-->
-
-                    <div class="row">
-                      <div class="col-sm-12">
-                        <p class="icon"></p>
-                        <p>
-                            Alte Militärpostkarten
-                        </p>
-                        <a href="https://itunes.apple.com/ch/podcast/info-schweizer-armee/id448622473" type="button" class="btn btn-primary">Postkarten</a>
-                      </div>          
-                        
-                    </div>
-                  </div>
-                </div>
-                
-                
-                
             
-            </div>
+            
+            
         </div>
             
             
