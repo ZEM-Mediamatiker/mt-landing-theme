@@ -13,11 +13,24 @@ body {
 a.btn-primary:visited {
   color: #ffffff; }
 
-a:visited {
-  color: #069; }
+.btn.btn-primary {
+  color: #fff; }
 
 .centered {
   text-align: center; }
+
+a:visited {
+  color: #005580; }
+
+a:hover {
+  color: #004b70; }
+
+.external {
+  background: #efefef;
+  padding: 20px 0px 20px 0px; }
+
+.external-services .col-sm-12 {
+  margin-bottom: 0px; }
 
 .page-title {
   margin: 70px 0px 30px 0px !important; }

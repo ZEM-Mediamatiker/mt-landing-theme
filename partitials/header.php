@@ -29,21 +29,21 @@
               <!-- Treecrumb dropdown element -->
               <li class="dropdown">
                 <!-- Dropdown label -->
-                <a id="admin-dropdown" href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon icon--right"></span>Bundesverwaltung</a>
+                <a id="admin-dropdown" href="#" class="dropdown-toggle" data-toggle="dropdown"><span class="icon icon--right"></span><?php echo $lang['EIDG_BV'];?></a>
                 <!-- Dropdown list element -->
                 <ul class="dropdown-menu" role="menu" aria-labelledby="admin-dropdown">
                   <!-- Dropdown title, can ben place anywhere in the list -->
                   <li class="dropdown-header">
-                    <a href="#">Der Bundesrat admin.ch</a>
+                    <a href="#"><?php echo $lang['EIDG_BR'];?></a>
                     <ul>
-                      <li><a href="#">BK: Schweizerische Bundeskanzlei</a></li>
-                      <li><a href="#">EDA: Eidgenössisches Departement für auswärtige Angelegenheiten</a></li>
-                      <li><a href="#">EDI: Eidgenössisches Department des Innern</a></li>
-                      <li><a href="#">EJPD: Eidgenössisches Justiz- und Polizeidepartment</a></li>
-                      <li><a href="#">VBS: Eidgenössisches Department für Verteidigung, Bevölkerungsschutz und Sport</a></li>
-                      <li><a href="#">EFD: Eidgenössisches Finanzdepartement</a></li>
-                        <li><a href="#">WBF: Eidgenössisches Departement für Wirtschaft, Bildung und Forschung</a></li>
-                      <li><a href="#">UVEK: Eidgenössisches Department für Umwelt, Verkehr, Energie und Kommunikation</a></li>
+                    <li><a href="#"><?php echo $lang['EIDG_BK'];?></a></li>
+                    <li><a href="#"><?php echo $lang['EIDG_EDA'];?></a></li>
+                    <li><a href="#"><?php echo $lang['EIDG_EDI'];?></a></li>
+                    <li><a href="#"><?php echo $lang['EIDG_EJPD'];?></a></li>
+                    <li><a href="#"><?php echo $lang['EIDG_VBS'];?></a></li>
+                    <li><a href="#"><?php echo $lang['EIDG_EFD'];?></a></li>
+                    <li><a href="#"><?php echo $lang['EIDG_WBF'];?></a></li>
+                    <li><a href="#"><?php echo $lang['EIDG_UVEK'];?></a></li>
                     </ul>
                   </li>
                 </ul>
@@ -60,8 +60,8 @@
               <ul>
                 <li><a href="?lang=de" lang="de" title="Deutsch selected" aria-label="Deutsch selected" class="langde active">DE</a></li>
                   <li><a href="?lang=fr" lang="fr" title="Français" aria-label="Français" class="langfr">FR</a></li>
-                <li><a href="?lang=it" lang="it" title="Italiano" aria-label="Italiano" class="langit">IT</a></li>
-                <li><a href="?lang=en" lang="en" title="English" aria-label="English" class=langen>EN</a></li>
+                <!--<li><a href="?lang=it" lang="it" title="Italiano" aria-label="Italiano" class="langit">IT</a></li>
+                <li><a href="?lang=en" lang="en" title="English" aria-label="English" class=langen>EN</a></li>-->
               </ul>
             </nav>
               
