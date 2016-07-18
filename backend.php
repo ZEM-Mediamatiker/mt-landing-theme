@@ -79,7 +79,7 @@
                         </p>
                         <h2><a href="#">DIGAME</a></h2>
                         <p>
-                      Im Videoportal finden Sie Videos zu den Themen Verteidigung, Bevölkerungsschutz und Sport.
+                      In DIGAME können die Mediaassets verwaltet werden.
                           </p>
                         <a href="https://www.digame.mediathek.admin.ch/" target="_blank" type="button" class="btn btn-primary">DIGAME aufrufen</a>
                       </div>
@@ -100,7 +100,7 @@
                         </p>
                         <h2><a href="#">Handbuch</a></h2>
                         <p>
-                      Im Fotoportal finden Sie Bilder zu den Themen Verteidigung, Bevölkerungsschutz und Sport.
+                      Das Handbuch bietet alle notwendigen Informationen zu DIGAME.
                           </p>
                         <a href="http://digame.zem.ch" target="_blank" type="button" class="btn btn-primary">Handbuch öffnen</a>
                       </div>
