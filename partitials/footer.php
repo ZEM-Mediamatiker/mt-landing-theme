@@ -1,24 +1,18 @@
         <footer>
-
             <address>
-            <span class="hidden-xs"><?php echo $lang['EIDG_DEP_FOOT'];?></span>
-            <nav class="pull-right">
-              <ul>
-                <li><a href="https://www.admin.ch/gov/de/start/rechtliches.html" target="_blank">Rechtliches</a></li><li><a href="https://www.admin.ch/gov/de/start/dokumentation/impressum.html" target="_blank">Impressum</a></li>
-              </ul>
-            </nav>
-          </address>
-        </footer>
-            
-    
-
-
-            
-            
-    
-
-
-        
+                <span class="hidden-xs"><?php echo $lang['EIDG_DEP_FOOT'];?></span>
+                <nav class="pull-right">
+                    <ul>
+                        <li>
+                            <a href="https://www.admin.ch/gov/de/start/rechtliches.html" target="_blank">Rechtliches</a>
+                        </li>
+                        <li>
+                            <a href="https://www.admin.ch/gov/de/start/dokumentation/impressum.html" target="_blank">Impressum</a>
+                        </li>
+                    </ul>
+                </nav>
+            </address>
+        </footer> 
     </body>
     
     <script type="text/javascript" src="js/vendors.min.js"></script>
@@ -45,8 +39,7 @@
 			$(".langen").addClass("active");
 		}else{
 			$(".langen").removeClass("active");
-		}
-        
+		}        
 	</script>
     
 </html>

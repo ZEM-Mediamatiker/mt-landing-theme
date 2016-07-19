@@ -27,10 +27,21 @@ a:hover {
 
 .external {
   background: #efefef;
-  padding: 20px 0px 20px 0px; }
+  padding: 20px 0px 20px 0px;
+  transition: 0.1s ease; }
+
+.external:hover {
+  background: #aaaaaa; }
 
 .external-services .col-sm-12 {
   margin-bottom: 0px; }
+
+.external-links a {
+  transition: 0.1s ease; }
+
+.external-links a:hover {
+  text-decoration: none;
+  color: #fff; }
 
 .page-title {
   margin: 70px 0px 30px 0px !important; }
@@ -39,10 +50,19 @@ p.icon {
   font-family: 'iconfont';
   font-size: 28px; }
 
+.yamm .dropdown-menu {
+  left: 0; }
+
+.nomargintop {
+  margin-top: -1px !important; }
+
+/*.nav-mobile .dropdown-menu{
+    margin-top: -1px;
+}*/
 @font-face {
   font-family: 'iconfont';
   src: url("../fonts/iconfont.eot");
-  src: url("../fonts/iconfont.eot?#iefix") format("embedded-opentype"), url("../fonts/iconfont.woff2") format("woff2"), url("../fonts/iconfont.woff") format("woff"), url("../fonts/iconfont.ttf") format("truetype"), url("../fonts/iconfont.svg#open_sanslight") format("svg");
+  src: url("../fonts/iconfont.eot?#iefix") format("embedded-opentype"), url("../fonts/iconfont.woff") format("woff"), url("../fonts/iconfont.ttf") format("truetype"), url("../fonts/iconfont.svg#open_sanslight") format("svg");
   font-weight: normal;
   font-style: normal; }
 

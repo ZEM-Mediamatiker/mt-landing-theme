@@ -11,19 +11,33 @@
 <nav class="nav-main yamm navbar" id="main-navigation">
         <h2 class="sr-only">Navigation</h2>
         <section class="nav-mobile">
-          <div class="table-row">
-            <div class="nav-mobile-header">
-              <div class="table-row">
-                <span class="nav-mobile-logo">
-                  <img src="img/swiss.svg" onerror="this.onerror=null; this.src='img/swiss.png'" alt="Confederatio Helvetica" />
-                </span>
-                <h1><a href="#">Mediathek</a></h1>
-              </div>
-            </div>
-            
-            
-          </div>
-        </section>
+		<div class="table-row">
+			<div class="nav-mobile-header">
+				<div class="table-row">
+					<span class="nav-mobile-logo">
+            <img src="img/swiss.svg" onerror="this.onerror=null; this.src='img/swiss.png'" alt="Confederatio Helvetica" />
+          </span>
+					<h1><a href="#"><?php echo $lang['MEDIATHEK'];?></a></h1>
+				</div>
+			</div>
+			<div class="table-cell dropdown">
+				<a href="#" class="nav-mobile-menu dropdown-toggle" data-toggle="dropdown"><span class="icon icon--menu"></span></a>
+				<div class="drilldown dropdown-menu" role="menu">
+					<div class="drilldown-container">
+						<nav class="nav-page-list">
+							<ul>
+								<li><a href="index.php">Mediathek Frontend</a></li>
+								<li><a href="backend.php">Mediathek Backend</a></li>
+							</ul>
+							
+						</nav>
+                        <a href="#" class="yamm-close-bottom"><span class="icon icon--top" aria-hidden="true"></span></a>
+					</div>
+				</div>
+			</div>
+			
+		</div>
+	</section>
 
         <!-- The tab navigation -->
         <ul class="nav navbar-nav">
@@ -114,7 +128,7 @@
             
             
             
-            <div class="row">
+            <div class="external-links row">
                 
                 <a href="https://www.youtube.com/user/schweizerarmee" target="_blank">
                 <div class="col-md-4 centered">
@@ -129,7 +143,7 @@
                         <p>
                             <?php echo $lang['MED_YOUTUBE'];?>
                         </p>
-                        <!--<a href="https://vp.zem.ch/startseite/" type="button" class="btn btn-primary">YouTube</a>-->
+                        
                       </div>          
                         
                     </div>
@@ -150,7 +164,7 @@
                         <p>
                             <?php echo $lang['MED_ITUNES'];?>
                         </p>
-                        <!--<a href="https://itunes.apple.com/ch/podcast/info-schweizer-armee/id448622473" type="button" class="btn btn-primary">iTunes</a>-->
+                        
                       </div>          
                         
                     </div>
@@ -171,7 +185,7 @@
                         <p>
                             <?php echo $lang['MED_CARDS'];?>
                         </p>
-                        <!--<a href="https://itunes.apple.com/ch/podcast/info-schweizer-armee/id448622473" type="button" class="btn btn-primary">Postkarten</a>-->
+                        
                       </div>          
                         
                     </div>

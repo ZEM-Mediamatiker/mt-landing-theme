@@ -247,11 +247,13 @@ $(window).scroll(function () {
     if (!$('.nav-mobile').hasClass('fixed')) {
       $('.nav-mobile').addClass('fixed')
         .after('<div class="nav-mobile-spacer" id="spacer" style="height:36px;"></div>');
+        $('.mobilenavi').addClass('nomargintop');
     }
   }
   else {
     if ($('.nav-mobile').hasClass('fixed')) {
       $('.nav-mobile').removeClass('fixed');
+        $('.mobilenavi').removeClass('nomargintop');
       $('#spacer').remove();
     }
   }
