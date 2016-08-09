@@ -15,9 +15,10 @@
         </footer> 
     </body>
     
-    <script type="text/javascript" src="js/vendors.min.js"></script>
-    <script type="text/javascript" src="js/polyfills.min.js"></script>
-    <script type="text/javascript" src="js/main.min.js"></script>
+
+    <script src="<?php echo get_template_directory_uri(); ?>/js/vendors.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/polyfill.min.js"></script>
+    <script src="<?php echo get_template_directory_uri(); ?>/js/main.min.js"></script>
         
     <script>		
 		if(window.location.search == "?lang=fr"){

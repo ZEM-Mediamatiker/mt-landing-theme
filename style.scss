@@ -1,7 +1,7 @@
 /*
 Theme Name: Mediathek Landingpage Theme
 Theme URI: http://zem.ch
-Description: Theme fuer die Landingpage der Mediathek
+Description: Wordpress-Theme fuer die Landingpage der Mediathek
 Author: Stefan Eckstein
 Author URI: http://eckstein.be
 Version: 0.1
@@ -16,6 +16,11 @@ html{
 body{
     overflow-x: visible;
 }
+
+.active{
+    color: #069;
+}
+
 
 .brand{
     width: 600px;
@@ -47,6 +52,11 @@ a:visited{
 
 a:hover{
     color: #004b70;
+}
+
+a.btn{
+    text-decoration: none;
+    margin-top: 20px;
 }
 
 .external{
@@ -105,11 +115,11 @@ p.icon{
 
 @font-face {
     font-family: 'iconfont';
-    src: url('../fonts/iconfont.eot');
-    src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/iconfont.woff') format('woff'),
-         url('../fonts/iconfont.ttf') format('truetype'),
-         url('../fonts/iconfont.svg#open_sanslight') format('svg');
+    src: url('fonts/iconfont.eot');
+    src: url('fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/iconfont.woff') format('woff'),
+         url('fonts/iconfont.ttf') format('truetype'),
+         url('fonts/iconfont.svg#open_sanslight') format('svg');
     font-weight: normal;
     font-style: normal;
 

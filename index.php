@@ -72,20 +72,41 @@
         <div id="content" class="col-sm-12">
             <div class="row">
                 
-                <div class="col-md-6 col-sm-4 centered">
-                  <div class="list-group">
-                    <!--<div class="list-group-header">
-                      <h2 class="pull-left">Videoportal</h2>
-                    </div>-->
+                <?php if ( have_posts() ) : ?>
+                        <?php query_posts('cat=900'); ?>
+						<?php while ( have_posts() ) : the_post(); ?>
+							<div <?php post_class('col-md-6 col-sm-4 centered'); ?>>
+								<div class="entry-headimg"><?php the_post_thumbnail( 'entry-headimg' ); ?></div>
+								<div class="category-entry-content">
+									
+									<h2><?php the_title(); ?></h2>
+
+									<div class="entry">
+										<?php the_content(''); ?> 
+                                        
+									</div>
+								</div>
+							</div>
+							
+							
+							
+						<?php endwhile; 
+
+						else: ?>
+							<p>Sorry, no posts matched your criteria.</p>
+						<?php endif; ?>
+                
+                <!--<div class="col-md-6 col-sm-4 centered">
+                  
 
                     <div class="row">
                       <div class="col-sm-12">
                         <p>
                           <img src="img/videoportal.jpg" alt="Image description">
                         </p>
-                        <h2><a href="#"><?php echo $lang['MED_VIDEO'];?></a></h2>
+                        <h2><a href="#"></a></h2>
                         <p>
-                            <?php echo $lang['MED_VIDEO_DESC'];?>
+                           
                           </p>
                         <a href="https://vp.zem.ch/startseite/" target="_blank" type="button" class="btn btn-primary"><?php echo $lang['MED_VIDEO_BTN'];?></a>
                       </div>
@@ -94,25 +115,22 @@
                 </div>
                 
                 <div class="col-md-6 col-sm-4 centered">
-                  <div class="list-group">
-                    <!--<div class="list-group-header">
-                      <h2 class="pull-left">Videoportal</h2>
-                    </div>-->
+                  
 
                     <div class="row">
                       <div class="col-sm-12">
                         <p>
                           <img src="img/fotoportal.jpg" alt="Image description">
                         </p>
-                        <h2><a href="#"><?php echo $lang['MED_FOTO'];?></a></h2>
+                        <h2><a href="#"></a></h2>
                         <p>
-                            <?php echo $lang['MED_FOTO_DESC'];?>
+                            
                           </p>
                         <a href="https://www.mediathek.admin.ch" target="_blank" type="button" class="btn btn-primary"><?php echo $lang['MED_FOTO_BTN'];?></a>
                       </div>
                     </div>
                   </div>
-                </div>
+                </div>-->
                 
                 
             
