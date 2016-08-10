@@ -140,18 +140,16 @@
             
             <div class="external-links row">
                 
-                <a href="https://www.youtube.com/user/schweizerarmee" target="_blank">
+                <a href="<?php $options = get_option('mt_theme_options'); echo $options['offer_youtube_url'];?>" target="_blank">
                 <div class="col-md-4 centered">
                   <div class="external list-group">
-                    <!--<div class="list-group-header">
-                      <h2 class="pull-left">Videoportal</h2>
-                    </div>-->
 
                     <div class="external-services row">
                       <div class="col-sm-12">
                         <p class="icon"></p>
                         <p>
-                            <?php echo $lang['MED_YOUTUBE'];?>
+                                <?php $options = get_option('mt_theme_options'); echo $options['offer_youtube_btn'];?>
+                            
                         </p>
                         
                       </div>          
@@ -161,18 +159,15 @@
                 </div>
                 </a>
                 
-                <a href="https://itunes.apple.com/ch/podcast/info-schweizer-armee/id448622473" target="_blank">
+                <a href="<?php $options = get_option('mt_theme_options'); echo $options['offer_itunes_url'];?>" target="_blank">
                 <div class="col-md-4 centered">
                   <div class="external list-group">
-                    <!--<div class="list-group-header">
-                      <h2 class="pull-left">Videoportal</h2>
-                    </div>-->
 
                     <div class="external-services row">
                       <div class="col-sm-12">
                         <p class="icon"></p>
                         <p>
-                            <?php echo $lang['MED_ITUNES'];?>
+                            <?php $options = get_option('mt_theme_options'); echo $options['offer_itunes_btn'];?>
                         </p>
                         
                       </div>          
@@ -182,18 +177,15 @@
                 </div>
                 </a>
                 
-                <a href="http://www.mediathek.admin.ch/Assets/MilitaerPostkarten" target="_blank">
+                <a href="<?php $options = get_option('mt_theme_options'); echo $options['offer_cards_url'];?>" target="_blank">
                 <div class="col-md-4 centered">
                   <div class="external list-group">
-                    <!--<div class="list-group-header">
-                      <h2 class="pull-left">Videoportal</h2>
-                    </div>-->
 
                     <div class="external-services row">
                       <div class="col-sm-12">
                         <p class="icon"></p>
                         <p>
-                            <?php echo $lang['MED_CARDS'];?>
+                            <?php $options = get_option('mt_theme_options'); echo $options['offer_cards_btn'];?>
                         </p>
                         
                       </div>          

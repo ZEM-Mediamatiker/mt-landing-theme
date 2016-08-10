@@ -14,7 +14,9 @@ body {
   overflow-x: visible; }
 
 .active {
-  color: #069; }
+  color: #069;
+  background: #E5E5E5;
+  padding: 4px 0px !important; }
 
 .brand {
   width: 600px; }

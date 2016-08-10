@@ -1,18 +1,23 @@
         <footer>
             <address>
-                <span class="hidden-xs"><?php echo $lang['EIDG_DEP_FOOT'];?></span>
+                <span class="hidden-xs"><?php $options = get_option('mt_theme_options'); echo $options['foot_departement_title'];?></span>
                 <nav class="pull-right">
                     <ul>
                         <li>
-                            <a href="https://www.admin.ch/gov/de/start/rechtliches.html" target="_blank">Rechtliches</a>
+                            <a href="<?php $options = get_option('mt_theme_options'); echo $options['foot_right_url'];?>" target="_blank">
+                                <?php $options = get_option('mt_theme_options'); echo $options['foot_right_btn'];?>
+                            </a>
                         </li>
                         <li>
-                            <a href="https://www.admin.ch/gov/de/start/dokumentation/impressum.html" target="_blank">Impressum</a>
+                            <a href="<?php $options = get_option('mt_theme_options'); echo $options['foot_imprint_url'];?>" target="_blank">
+                                <?php $options = get_option('mt_theme_options'); echo $options['foot_imprint_btn'];?>
+                            </a>
                         </li>
                     </ul>
                 </nav>
             </address>
         </footer> 
+    <?php wp_footer(); ?>
     </body>
     
 
