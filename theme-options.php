@@ -118,7 +118,7 @@ if ( ! isset( $_REQUEST['settings-updated'] ) )
     	<ul class="tabs" style="position:relative;margin-top:25px;" style="clear:both">
 			<li class="settings-tab" style="float:left;"><a href='#allgemein'>Allgemeine Texte</a></li>
 			<li class="settings-tab" style="float:left;"><a href='#departmenu'>Departement-Menu</a></li>
-			<li class="settings-tab" style="float:left;"><a href='#franzoesisch'>Französisch</a></li>
+			<li class="settings-tab" style="float:left;"><a href='#404'>404-Seite</a></li>
 			<li style="clear:both;"></li>
 		</ul>
 
@@ -179,6 +179,15 @@ if ( ! isset( $_REQUEST['settings-updated'] ) )
       			<tr valign="top">
         			<td>Departementsbezeichnung</td>
         			<td><input id="mt_theme_options[head_departement_title]" class="regular-text" type="text" name="mt_theme_options[head_departement_title]" value="<?php esc_attr_e( $options['head_departement_title'] ); ?>" /></td>
+      			</tr>
+                
+                <tr valign="top">
+					<th>Introtext</th>
+      			</tr>
+                
+                <tr valign="top">
+        			<td>Willkommenstext</td>
+        			<td><input id="mt_theme_options[content_welcome_head]" class="regular-text" type="text" name="mt_theme_options[content_welcome_head]" value="<?php esc_attr_e( $options['content_welcome_head'] ); ?>" /></td>
       			</tr>
                 
                 <tr valign="top">
@@ -270,64 +279,24 @@ if ( ! isset( $_REQUEST['settings-updated'] ) )
 			</table>
 		</div>
 		
-		<div id="franzoesisch">
-			<h3>Übersetzungen Französisch</h3>
-			<table class="form-table" style="width:75%">
-				<tr valign="top">
-        			<td>Headline</td>
-        			<td><input id="mt_theme_options[head_fr]" class="regular-text" type="text" name="mt_theme_options[head_fr]" value="<?php esc_attr_e( $options['head_fr'] ); ?>" /></td>
-      			</tr>
-      			<tr valign="top">
-        			<td>Headline bold</td>
-        			<td><input id="mt_theme_options[head_bold_fr]" class="regular-text" type="text" name="mt_theme_options[head_bold_fr]" value="<?php esc_attr_e( $options['head_bold_fr'] ); ?>" /></td>
-      			</tr>
-				<tr valign="top">
-        			<td>Videoportal</td>
-        			<td><input id="mt_theme_options[vp_fr]" class="regular-text" type="text" name="mt_theme_options[vp_fr]" value="<?php esc_attr_e( $options['vp_fr'] ); ?>" /></td>
-      			</tr>
-				<tr valign="top">
-        			<td>Fotoportal</td>
-        			<td><input id="mt_theme_options[fp_fr]" class="regular-text" type="text" name="mt_theme_options[fp_fr]" value="<?php esc_attr_e( $options['fp_fr'] ); ?>" /></td>
-      			</tr>
-				<tr valign="top">
-        			<td valign="top">Text Box Videoportal</td>
-        			<td><textarea style="width:351px;min-width:351px;max-width:351px;" id="mt_theme_options[text_vp_fr]" class="large-text" cols="30" rows="4" name="mt_theme_options[text_vp_fr]"><?php echo esc_textarea( $options['text_vp_fr'] ); ?></textarea></td>
-      			</tr>
-      			<tr valign="top">
-        			<td valign="top">Text Box Fotoportal</td>
-        			<td><textarea style="width:351px;min-width:351px;max-width:351px;" id="mt_theme_options[text_fp_fr]" class="large-text" cols="30" rows="4" name="mt_theme_options[text_fp_fr]"><?php echo esc_textarea( $options['text_fp_fr'] ); ?></textarea></td>
-      			</tr>
-      			<tr valign="top">
-        			<td>Backend</td>
-        			<td><input id="mt_theme_options[backend_fr]" class="regular-text" type="text" name="mt_theme_options[backend_fr]" value="<?php esc_attr_e( $options['backend_fr'] ); ?>" /></td>
-      			</tr>
-      			<tr valign="top">
-        			<td>Handbuch</td>
-        			<td><input id="mt_theme_options[handbuch_fr]" class="regular-text" type="text" name="mt_theme_options[handbuch_fr]" value="<?php esc_attr_e( $options['handbuch_fr'] ); ?>" /></td>
-      			</tr>
-      			<tr valign="top">
-        			<td>Weitere Angebote</td>
-        			<td><input id="mt_theme_options[text_angebote_fr]" class="regular-text" type="text" name="mt_theme_options[text_angebote_fr]" value="<?php esc_attr_e( $options['text_angebote_fr'] ); ?>" /></td>
-      			</tr>
-      			<tr valign="top">
-        			<td>YouTube</td>
-        			<td><input id="mt_theme_options[youtube_fr]" class="regular-text" type="text" name="mt_theme_options[youtube_fr]" value="<?php esc_attr_e( $options['youtube_fr'] ); ?>" /></td>
-      			</tr>
-      			<tr valign="top">
-        			<td>iTunes</td>
-        			<td><input id="mt_theme_options[itunes_fr]" class="regular-text" type="text" name="mt_theme_options[itunes_fr]" value="<?php esc_attr_e( $options['itunes_fr'] ); ?>" /></td>
-      			</tr>
-      			<tr valign="top">
-        			<td>Postkarten</td>
-        			<td><input id="mt_theme_options[postkarten_fr]" class="regular-text" type="text" name="mt_theme_options[postkarten_fr]" value="<?php esc_attr_e( $options['postkarten_fr'] ); ?>" /></td>
-      			</tr>
-      			<tr valign="top">
-        			<td valign="top">Text Newsletter</td>
-        			<td><textarea style="width:351px;min-width:351px;max-width:351px;" disabled placeholder="Der Newsletter ist leider nicht zweisprachig verfügbar." id="mt_theme_options[text_newsletter_fr]" class="large-text" cols="30" rows="4" name="mt_theme_options[text_newsletter_fr]"><?php echo esc_textarea( $options['text_newsletter_fr'] ); ?></textarea></td>
-      			</tr>
+		<div id="404">
 			
-			</table>
-		</div>	
+			<table class="form-table" style="width:75%">
+                
+                <tr valign="top">
+					<th>Header</th>
+      			</tr>
+
+      			<tr valign="top">
+        			<td>Departementsbezeichnung</td>
+        			<td><input id="mt_theme_options[head_departement_title]" class="regular-text" type="text" name="mt_theme_options[head_departement_title]" value="<?php esc_attr_e( $options['head_departement_title'] ); ?>" /></td>
+      			</tr>
+                
+                
+      			     			
+      		</table>
+    				
+		</div>
 		        
     <!-- Einstellungen speichern -->
     <p class="submit"><input type="submit" class="button-primary" value="Einstellungen speichern"/></p>

@@ -1,6 +1,6 @@
 <!DOCTYPE html>
+<?php wp_head(); ?>
 <html>
-    <?php wp_head(); ?>
     <head> 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -65,3 +65,7 @@
                     </a>
                 </div>
             </header>
+            
+            <?php                    
+                require_once ( get_stylesheet_directory() . '/partitials/tab-nav.php' );
+            ?>

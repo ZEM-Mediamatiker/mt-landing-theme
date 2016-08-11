@@ -3,12 +3,13 @@ Theme Name: Mediathek Landingpage Theme
 Theme URI: http://zem.ch
 Description: Wordpress-Theme fuer die Landingpage der Mediathek
 Author: Stefan Eckstein
-Author URI: http://eckstein.be
+Author URI: https://eckstein.be
 Version: 0.1
 Tags: zem, mediathek, landingpage
 */
 html {
-  border: none; }
+  border: none;
+  /*margin-top: 0px !important;*/ }
 
 body {
   overflow-x: visible; }
@@ -17,6 +18,9 @@ body {
   color: #069;
   background: #E5E5E5;
   padding: 4px 0px !important; }
+
+.wp-post-image {
+  height: 100%; }
 
 .brand {
   width: 600px; }

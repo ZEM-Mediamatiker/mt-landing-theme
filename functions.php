@@ -9,6 +9,22 @@ register_nav_menus(array(
 ));
 
 
+function add_classes_on_li($classes, $item, $args) {
+  $classes[] = 'dropdown yamm-fw tab-active';
+  return $classes;
+}
+add_filter('nav_menu_css_class','add_classes_on_li',1,3);
+
+add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
+
+function special_nav_class ($classes, $item) {
+    if (in_array('current-menu-item', $classes) ){
+        $classes[] = 'current ';
+    }
+    return $classes;
+}
+
+
 /* 
  * Helper function to return the theme option value. If no value has been saved, it returns $default.
  * Needed because options are saved as serialized strings.
