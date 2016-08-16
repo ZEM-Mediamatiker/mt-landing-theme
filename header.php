@@ -17,8 +17,8 @@
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/vendors.css" type="text/css" />
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
         
-        <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
-        <link rel="icon" href="img/favicon.ico" type="image/x-icon" />
+        <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.ico" type="image/x-icon" />
         
     </head>
     <body>
@@ -26,9 +26,7 @@
             <header>
                 <div class="clearfix">
                     
-                    <?php                    
-                        require_once ( get_stylesheet_directory() . '/partitials/breadcrumb-nav.php' );
-                    ?>
+                    <?php get_template_part( 'partitials/breadcrumb', 'nav' ); ?>
                     
                     
 
@@ -43,15 +41,24 @@
 							));
 						?>
 
-                        <nav class="nav-service" role="navigation">
-                            <h2 class="sr-only">Services navigation</h2>
+                        <!--<nav class="nav-service" role="navigation">
                             <ul>
                                 <li>
                                     <a href="http://www.lba.admin.ch/internet/lba/de/home/themen/zem.html" target="_blank">Contact
                                     </a>
                                 </li>
                             </ul>
-                        </nav>
+                        </nav>-->
+                      
+                        <?php
+							wp_nav_menu(array(
+                                "container" => "nav",
+                                "container_class" => "nav-service",
+								"theme_location" => "service-nav"
+							));
+						?>
+                      
+                      
                     </section>
                 </div>
 
@@ -63,9 +70,13 @@
                             <?php $options = get_option('mt_theme_options'); echo $options['head_departement_title'];?>
                         </h1>
                     </a>
+                    
+                    <form class="form-horizontal form-search pull-right" role="form">
+                        <label for="search-field" class="sr-only">Search:</label>
+                        <input id="search-field" class="form-control search-field" type="text" placeholder="Search">
+                    </form>
+                    
                 </div>
             </header>
             
-            <?php                    
-                require_once ( get_stylesheet_directory() . '/partitials/tab-nav.php' );
-            ?>
+            <?php get_template_part( 'partitials/tab', 'nav' ); ?>

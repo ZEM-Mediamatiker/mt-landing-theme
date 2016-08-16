@@ -5,7 +5,7 @@ Description: Wordpress-Theme fuer die Landingpage der Mediathek
 Author: Stefan Eckstein
 Author URI: https://eckstein.be
 Version: 0.1
-Tags: zem, mediathek, landingpage
+Tags: featured-images, custom-menu, theme-options, news
 */
 html {
   border: none;
@@ -75,6 +75,11 @@ p.icon {
   font-family: 'iconfont';
   font-size: 28px; }
 
+input.btn {
+  width: 85%;
+  text-align: left;
+  padding: 6px 6px 7px; }
+
 .yamm .dropdown-menu {
   left: 0; }
 
@@ -84,6 +89,11 @@ p.icon {
 /*.nav-mobile .dropdown-menu{
     margin-top: -1px;
 }*/
+/* - - - 
+    
+    Standard Wordpress-Classes
+
+- - - */
 @media screen and (max-width: 768px) {
   .col-sm-4 {
     /*width: 50% !important;*/ } }
