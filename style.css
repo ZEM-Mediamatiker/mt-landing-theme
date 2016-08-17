@@ -1,11 +1,14 @@
 /*
-Theme Name: Mediathek Landingpage Theme
+Theme Name: Mediathek Landing Theme
 Theme URI: http://zem.ch
 Description: Wordpress-Theme fuer die Landingpage der Mediathek
 Author: Stefan Eckstein
 Author URI: https://eckstein.be
 Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: featured-images, custom-menu, theme-options, news
+Text Domain: mtlandingtheme
 */
 html {
   border: none;
@@ -94,6 +97,36 @@ input.btn {
     Standard Wordpress-Classes
 
 - - - */
+.wp-caption {
+  font-size: auto; }
+
+.wp-caption-text {
+  font-size: auto; }
+
+.sticky {
+  font-size: auto; }
+
+.screen-reader-text {
+  font-size: auto; }
+
+.gallery-caption {
+  font-size: auto; }
+
+.bypostauthor {
+  font-size: auto; }
+
+.alignright {
+  font-size: auto; }
+
+.alignleft {
+  font-size: auto; }
+
+.aligncenter {
+  font-size: auto; }
+
+.screen-reader-text {
+  color: red; }
+
 @media screen and (max-width: 768px) {
   .col-sm-4 {
     /*width: 50% !important;*/ } }

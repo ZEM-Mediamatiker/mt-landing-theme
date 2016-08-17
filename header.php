@@ -1,27 +1,17 @@
 <!DOCTYPE html>
-<?php wp_head(); ?>
-<html>
+<html <?php language_attributes(); ?>>
     <head> 
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         
-        <title>
-            <?php if(is_home() || is_front_page()) {
-				echo "Home | "; bloginfo('name'); ?>
-				<?php } else { ?>
-				<?php wp_title('','true','right'); ?> | <?php bloginfo('name'); ?>
-			<?php } ?>
-        </title>
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/print.css" type="text/css" />
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/admin.css" type="text/css" />
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/vendors.css" type="text/css" />
         <link rel="stylesheet" href="<?php bloginfo('stylesheet_url'); ?>" type="text/css" media="screen" />
         
-        <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.ico" type="image/x-icon" />
-        <link rel="icon" href="<?php echo get_template_directory_uri(); ?>/img/favicon.ico" type="image/x-icon" />
-        
+    <?php wp_head(); ?>
     </head>
-    <body>
+    <body <?php body_class(); ?>>
         <div class="container container-main">
             <header>
                 <div class="clearfix">
@@ -64,7 +54,7 @@
 
                 <div class="clearfix">
                     <a href="#" class="brand hidden-xs" title="back to home">
-                        <img src="<?php echo get_template_directory_uri(); ?>/img/logo-CH.svg" data-fallback="<?php echo get_template_directory_uri(); ?>/img/logo-ch.png" alt="Swiss">
+                        <img src="<?php header_image(); ?>" data-fallback="<?php echo get_template_directory_uri(); ?>/img/logo-ch.png" height="<?php echo get_custom_header()->height; ?>" width="<?php echo get_custom_header()->width; ?>" alt="Swiss">
                         
                         <h1>
                             <?php $options = get_option('mt_theme_options'); echo $options['head_departement_title'];?>

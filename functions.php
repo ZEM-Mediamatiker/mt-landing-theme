@@ -2,6 +2,24 @@
 
 add_theme_support( 'post-thumbnails' ); 
 
+$bgargs = array(
+	'default-color' => 'ffffff',
+	//'default-image' => '%1$s/img/bg-striped.png',
+);
+
+add_theme_support( 'custom-background', $bgargs );
+
+
+$headerargs = array(
+	'width'         => 252,
+    'flex-height'    => true,
+	'default-image' => get_template_directory_uri() . '/img/logo-CH.svg',
+);
+
+add_theme_support( 'custom-header', $headerargs );
+
+add_theme_support( 'title-tag' );
+
 register_nav_menus(array(
     "service-nav" => "Service Navigation",
     "lang-nav" => "Language Navigation",
@@ -24,6 +42,9 @@ function special_nav_class ($classes, $item) {
     }
     return $classes;
 }
+
+
+
 
 
 /* 
