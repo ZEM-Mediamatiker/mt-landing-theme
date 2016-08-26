@@ -12,12 +12,34 @@
 			<label for="inputText" class="col-sm-5 control-label">
                 Tragen Sie sich für unseren kostenlosen Newsletter ein und bleiben Sie stets über die aktuellen Neuerungen informiert. 
             </label>
-			<div class="btn-group col-sm-7">
-				<input type="email" class="btn form-control" id="inputText" placeholder="Ihre E-Mail-Adresse">
+            
+                
+           <div class="newsletter-form">
+				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Newsletter') )?>				
+				</div>
+            
+            
+            
+            
+            
+      					           
+            
+            
+            
+
+            
+            
+            
+            
+            
+            
+			<!--<div class="btn-group col-sm-7">
+				<input type="email" class="btn form-control" id="inputText" placeholder="Ihre E-Mail-Adresse...">
 			
             
-				<button type="button" class="btn btn-primary">Anmelden</button>
-			</div>
+				<button type="button" class="btn btn-primary">Anmelden...</button>
+			</div>-->
+            
 		</div>
 	</fieldset>
 </form>

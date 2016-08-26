@@ -44,7 +44,15 @@ function special_nav_class ($classes, $item) {
 }
 
 
+function wpdocs_theme_add_editor_styles() {
+    add_editor_style( 'cass/custom-editor-style.css' );
+}
+add_action( 'admin_init', 'wpdocs_theme_add_editor_styles' );
 
+
+ register_sidebar(array('name'=>'Newsletter',
+ 'description'   => 'Newsletter',
+ ));
 
 
 /* 

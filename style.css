@@ -25,6 +25,9 @@ body {
 .wp-post-image {
   height: 100%; }
 
+.widget {
+  list-style-type: none; }
+
 .brand {
   width: 600px; }
 
@@ -78,10 +81,41 @@ p.icon {
   font-family: 'iconfont';
   font-size: 28px; }
 
-input.btn {
-  width: 85%;
-  text-align: left;
-  padding: 6px 6px 7px; }
+/*input.btn{
+    width: 85%;
+    text-align: left;
+    padding: 6px 6px 7px;
+}*/
+.newsletter-form {
+  margin-left: 20px;
+  float: left;
+  width: 469px; }
+
+input:focus {
+  outline: none; }
+
+input:invalid {
+  box-shadow: none; }
+
+.newsletter-email {
+  float: left;
+  padding: 4px 4px;
+  margin-right: 10px;
+  line-height: 1.2;
+  font-weight: 100; }
+
+.newsletter-submit {
+  padding: 5px 10px 6px 10px;
+  border-radius: 3px;
+  line-height: 1.2;
+  border: 1px solid #069;
+  background: #069;
+  color: #fff;
+  font-weight: 100;
+  float: left; }
+
+.newsletter-submit:hover {
+  background: #004b70; }
 
 .yamm .dropdown-menu {
   left: 0; }

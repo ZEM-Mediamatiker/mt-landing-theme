@@ -275,6 +275,119 @@ if ( ! isset( $_REQUEST['settings-updated'] ) )
         			<td>Bundesrat-URL</td>
         			<td><input id="mt_theme_options[head_bread_br_url]" class="regular-text" type="text" name="mt_theme_options[head_bread_br_url]" value="<?php esc_attr_e( $options['head_bread_br_url'] ); ?>" /></td>
       			</tr>
+                
+                <tr valign="top">
+					<th></th>
+      			</tr>
+                
+                <tr valign="top">
+        			<td>Bundeskanzlei</td>
+        			<td><input id="mt_theme_options[head_bread_bk_text]" class="regular-text" type="text" name="mt_theme_options[head_bread_bk_text]" value="<?php esc_attr_e( $options['head_bread_bk_text'] ); ?>" /></td>
+      			</tr>
+                
+                <tr valign="top">
+        			<td>Bundeskanzlei-URL</td>
+        			<td><input id="mt_theme_options[head_bread_bk_url]" class="regular-text" type="text" name="mt_theme_options[head_bread_bk_url]" value="<?php esc_attr_e( $options['head_bread_bk_url'] ); ?>" /></td>
+      			</tr>
+                
+                <tr valign="top">
+					<th></th>
+      			</tr>
+                
+                <tr valign="top">
+        			<td>EDA</td>
+        			<td><input id="mt_theme_options[head_bread_eda_text]" class="regular-text" type="text" name="mt_theme_options[head_bread_eda_text]" value="<?php esc_attr_e( $options['head_bread_eda_text'] ); ?>" /></td>
+      			</tr>
+                
+                <tr valign="top">
+        			<td>URL</td>
+        			<td><input id="mt_theme_options[head_bread_eda_url]" class="regular-text" type="text" name="mt_theme_options[head_bread_eda_url]" value="<?php esc_attr_e( $options['head_bread_eda_url'] ); ?>" /></td>
+      			</tr>
+                
+                <tr valign="top">
+					<th></th>
+      			</tr>
+                
+                <tr valign="top">
+        			<td>EDI</td>
+        			<td><input id="mt_theme_options[head_bread_edi_text]" class="regular-text" type="text" name="mt_theme_options[head_bread_edi_text]" value="<?php esc_attr_e( $options['head_bread_edi_text'] ); ?>" /></td>
+      			</tr>
+                
+                <tr valign="top">
+        			<td>URL</td>
+        			<td><input id="mt_theme_options[head_bread_edi_url]" class="regular-text" type="text" name="mt_theme_options[head_bread_edi_url]" value="<?php esc_attr_e( $options['head_bread_edi_url'] ); ?>" /></td>
+      			</tr>
+                
+                <tr valign="top">
+					<th></th>
+      			</tr>
+                
+                <tr valign="top">
+        			<td>EJPD</td>
+        			<td><input id="mt_theme_options[head_bread_ejpd_text]" class="regular-text" type="text" name="mt_theme_options[head_bread_ejpd_text]" value="<?php esc_attr_e( $options['head_bread_ejpd_text'] ); ?>" /></td>
+      			</tr>
+                
+                <tr valign="top">
+        			<td>URL</td>
+        			<td><input id="mt_theme_options[head_bread_ejpd_url]" class="regular-text" type="text" name="mt_theme_options[head_bread_ejpd_url]" value="<?php esc_attr_e( $options['head_bread_ejpd_url'] ); ?>" /></td>
+      			</tr>
+                
+                <tr valign="top">
+					<th></th>
+      			</tr>
+                
+                <tr valign="top">
+        			<td>VBS</td>
+        			<td><input id="mt_theme_options[head_bread_vbs_text]" class="regular-text" type="text" name="mt_theme_options[head_bread_vbs_text]" value="<?php esc_attr_e( $options['head_bread_vbs_text'] ); ?>" /></td>
+      			</tr>
+                
+                <tr valign="top">
+        			<td>URL</td>
+        			<td><input id="mt_theme_options[head_bread_vbs_url]" class="regular-text" type="text" name="mt_theme_options[head_bread_vbs_url]" value="<?php esc_attr_e( $options['head_bread_vbs_url'] ); ?>" /></td>
+      			</tr>
+                
+                <tr valign="top">
+					<th></th>
+      			</tr>
+                
+                <tr valign="top">
+        			<td>EFD</td>
+        			<td><input id="mt_theme_options[head_bread_efd_text]" class="regular-text" type="text" name="mt_theme_options[head_bread_efd_text]" value="<?php esc_attr_e( $options['head_bread_efd_text'] ); ?>" /></td>
+      			</tr>
+                
+                <tr valign="top">
+        			<td>URL</td>
+        			<td><input id="mt_theme_options[head_bread_efd_url]" class="regular-text" type="text" name="mt_theme_options[head_bread_efd_url]" value="<?php esc_attr_e( $options['head_bread_efd_url'] ); ?>" /></td>
+      			</tr>
+                
+                <tr valign="top">
+					<th></th>
+      			</tr>
+                
+                <tr valign="top">
+        			<td>WBF</td>
+        			<td><input id="mt_theme_options[head_bread_wbf_text]" class="regular-text" type="text" name="mt_theme_options[head_bread_wbf_text]" value="<?php esc_attr_e( $options['head_bread_wbf_text'] ); ?>" /></td>
+      			</tr>
+                
+                <tr valign="top">
+        			<td>URL</td>
+        			<td><input id="mt_theme_options[head_bread_wbf_url]" class="regular-text" type="text" name="mt_theme_options[head_bread_wbf_url]" value="<?php esc_attr_e( $options['head_bread_wbf_url'] ); ?>" /></td>
+      			</tr>
+                
+                <tr valign="top">
+					<th></th>
+      			</tr>
+                
+                <tr valign="top">
+        			<td>UVEK</td>
+        			<td><input id="mt_theme_options[head_bread_uvek_text]" class="regular-text" type="text" name="mt_theme_options[head_bread_uvek_text]" value="<?php esc_attr_e( $options['head_bread_uvek_text'] ); ?>" /></td>
+      			</tr>
+                
+                <tr valign="top">
+        			<td>URL</td>
+        			<td><input id="mt_theme_options[head_bread_uvek_url]" class="regular-text" type="text" name="mt_theme_options[head_bread_uvek_url]" value="<?php esc_attr_e( $options['head_bread_uvek_url'] ); ?>" /></td>
+      			</tr>
+                
 			
 			</table>
 		</div>

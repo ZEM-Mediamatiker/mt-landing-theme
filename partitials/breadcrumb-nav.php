@@ -14,43 +14,43 @@
                                         </a>
                                     <ul>
                                         <li>
-                                            <a href="#">
-                                                BK: Schweizerische Bundeskanzlei
+                                            <a href="<?php $options = get_option('mt_theme_options'); echo $options['head_bread_bk_url'];?>" target="_blank">
+                                                <?php $options = get_option('mt_theme_options'); echo $options['head_bread_bk_text'];?>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
-                                                EDA: Eidgenössisches Departement für auswärtige Angelegenheiten
+                                            <a href="<?php $options = get_option('mt_theme_options'); echo $options['head_bread_eda_url'];?>" target="_blank">
+                                                <?php $options = get_option('mt_theme_options'); echo $options['head_bread_eda_text'];?>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
-                                                EDI: Eidgenössisches Department des Innern
+                                            <a href="<?php $options = get_option('mt_theme_options'); echo $options['head_bread_edi_url'];?>" target="_blank">
+                                                <?php $options = get_option('mt_theme_options'); echo $options['head_bread_edi_text'];?>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
-                                                EJPD: Eidgenössisches Justiz- und Polizeidepartment
+                                            <a href="<?php $options = get_option('mt_theme_options'); echo $options['head_bread_ejpd_url'];?>" target="_blank">
+                                                <?php $options = get_option('mt_theme_options'); echo $options['head_bread_ejpd_text'];?>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
-                                                VBS: Eidgenössisches Department für Verteidigung, Bevölkerungsschutz und Sport
+                                            <a href="<?php $options = get_option('mt_theme_options'); echo $options['head_bread_vbs_url'];?>" target="_blank">
+                                                <?php $options = get_option('mt_theme_options'); echo $options['head_bread_vbs_text'];?>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
-                                                EFD: Eidgenössisches Finanzdepartement
+                                            <a href="<?php $options = get_option('mt_theme_options'); echo $options['head_bread_efd_url'];?>" target="_blank">
+                                                <?php $options = get_option('mt_theme_options'); echo $options['head_bread_efd_text'];?>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
-                                                WBF: Eidgenössisches Departement für Wirtschaft, Bildung und Forschung
+                                            <a href="<?php $options = get_option('mt_theme_options'); echo $options['head_bread_wbf_url'];?>" target="_blank">
+                                                <?php $options = get_option('mt_theme_options'); echo $options['head_bread_wbf_text'];?>
                                             </a>
                                         </li>
                                         <li>
-                                            <a href="#">
-                                                UVEK: Eidgenössisches Department für Umwelt, Verkehr, Energie und Kommunikation
+                                            <a href="<?php $options = get_option('mt_theme_options'); echo $options['head_bread_uvek_url'];?>" target="_blank">
+                                                <?php $options = get_option('mt_theme_options'); echo $options['head_bread_uvek_text'];?>
                                             </a>
                                         </li>
                                         
