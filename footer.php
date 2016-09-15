@@ -4,13 +4,13 @@
 
 
       <div class="container-fluid">
-        <h3>Informiert bleiben</h3>
+        <h3><?php $options = get_option('mt_theme_options'); echo $options['nl-wdgt-title'];?></h3>
           
           <form action="" role="form">
 	<fieldset>
 		<div class="form-group">
 			<label for="inputText" class="col-sm-5 control-label">
-                Tragen Sie sich für unseren kostenlosen Newsletter ein und bleiben Sie stets über die aktuellen Neuerungen informiert. 
+                <?php $options = get_option('mt_theme_options'); echo $options['nl-wdgt-text'];?> 
             </label>
             
                 

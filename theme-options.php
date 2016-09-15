@@ -118,6 +118,7 @@ if ( ! isset( $_REQUEST['settings-updated'] ) )
     	<ul class="tabs" style="position:relative;margin-top:25px;" style="clear:both">
 			<li class="settings-tab" style="float:left;"><a href='#allgemein'>Allgemeine Texte</a></li>
 			<li class="settings-tab" style="float:left;"><a href='#departmenu'>Departement-Menu</a></li>
+            <li class="settings-tab" style="float:left;"><a href='#newsletter'>Newsletter</a></li>
 			<li class="settings-tab" style="float:left;"><a href='#404'>404-Seite</a></li>
 			<li style="clear:both;"></li>
 		</ul>
@@ -391,18 +392,40 @@ if ( ! isset( $_REQUEST['settings-updated'] ) )
 			
 			</table>
 		</div>
+      
+        <div id="newsletter">
+			
+			<table class="form-table" style="width:75%">
+                
+
+      			<tr valign="top">
+        			<td>Widget Titel</td>
+        			<td><input id="mt_theme_options[nl-wdgt-title]" class="regular-text" type="text" name="mt_theme_options[nl-wdgt-title]" value="<?php esc_attr_e( $options['nl-wdgt-title'] ); ?>" /></td>
+      			</tr>
+                
+                <tr valign="top">
+        			<td>Widget Text</td>
+        			<td><input id="mt_theme_options[nl-wdgt-text]" class="regular-text" type="text" name="mt_theme_options[nl-wdgt-text]" value="<?php esc_attr_e( $options['nl-wdgt-text'] ); ?>" /></td>
+      			</tr>
+                
+                
+      			     			
+      		</table>
+    				
+		</div>
+      
 		
 		<div id="404">
 			
 			<table class="form-table" style="width:75%">
                 
                 <tr valign="top">
-					<th>Header</th>
+					<th>Diese Einstellungen sind noch nicht funktionsfähig.</th>
       			</tr>
 
       			<tr valign="top">
-        			<td>Departementsbezeichnung</td>
-        			<td><input id="mt_theme_options[head_departement_title]" class="regular-text" type="text" name="mt_theme_options[head_departement_title]" value="<?php esc_attr_e( $options['head_departement_title'] ); ?>" /></td>
+        			<td>404 Titel</td>
+        			<td><input id="mt_theme_options[404_title]" class="regular-text" type="text" name="mt_theme_options[404_title]" value="<?php esc_attr_e( $options['404_title'] ); ?>" /></td>
       			</tr>
                 
                 
