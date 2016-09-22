@@ -1,25 +1,6 @@
 <?php get_header();?>   
 
-
-
-
-    
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-        <div class="container-fluid">
+<div class="container-fluid">
         
             <h1 class="page-title centered">
                 <?php $options = get_option('mt_theme_options'); echo $options['content_welcome_head'];?>
@@ -43,20 +24,13 @@
 									</div>
 								</div>
 							</div>
-							
-							
-							
 						<?php endwhile; 
 
 						else: ?>
 							<p>Sorry, no posts matched your criteria.</p>
-						<?php endif; ?>            
-                
-            
+						<?php endif; ?>
             </div> 
-            
-            
-            
+
             <div class="external-links row">
                 
                 <a href="<?php $options = get_option('mt_theme_options'); echo $options['offer_youtube_url'];?>" target="_blank">
@@ -113,23 +87,8 @@
                   </div>
                 </div>
                 </a>
-                
-                
-                
-            
             </div>
-            
-            
-
-
-            
-            
         </div>
-            
-            
-            
         </div>
-            
-        
 
 <?php get_footer();?> 
