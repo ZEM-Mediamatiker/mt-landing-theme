@@ -1,14 +1,45 @@
+/*
+Theme Name: Mediathek Landing Theme
+Theme URI: http://zem.ch
+Description: Wordpress-Theme fuer die Landingpage der Mediathek
+Author: Stefan Eckstein
+Author URI: https://eckstein.be
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: featured-images, custom-menu, theme-options, news
+Text Domain: mtlandingtheme
+*/
+
+
 html{
     border: none;
+    /*margin-top: 0px !important;*/
 }
 
 body{
     overflow-x: visible;
 }
 
+.active{
+    color: #069;
+    background: #E5E5E5;
+    padding: 4px 0px !important;
+}
+
+
+.wp-post-image{
+    height: 100%;
+}
+
+.widget{
+	list-style-type: none;
+}
+
 .brand{
     width: 600px;
 }
+
 .brand h1{
     max-width: 340px;
 }
@@ -38,6 +69,11 @@ a:hover{
     color: #004b70;
 }
 
+a.btn{
+    text-decoration: none;
+    margin-top: 20px;
+}
+
 .external{
     background: #efefef;
     padding: 20px 0px 20px 0px;
@@ -63,20 +99,6 @@ a:hover{
     color: #fff;
 }
 
-
-.newsletter-email:focus{
-	outline:0;
-    box-shadow: none;
-}
-
-.newsletter-email:invalid {
-    box-shadow: none;
-}
-
-.newsletter-submit{
-    background: orange !important;
-}
-
 .page-title{
     margin: 70px 0px 30px 0px !important;
 }
@@ -85,6 +107,50 @@ p.icon{
     font-family: 'iconfont';
     font-size: 28px;
 }
+
+/*input.btn{
+    width: 85%;
+    text-align: left;
+    padding: 6px 6px 7px;
+}*/
+
+.newsletter-form{
+	margin-left: 20px;
+	float: left;
+	width: 469px;
+}
+
+input:focus {
+    outline:none;
+}
+
+input:invalid {
+    box-shadow: none;
+}
+
+.newsletter-email{
+    float: left;
+    padding: 4px 4px;
+    margin-right: 10px;
+    line-height: 1.2;
+    font-weight: 100;
+}
+
+.newsletter-submit{
+    padding: 5px 10px 6px 10px;
+    border-radius: 3px;
+    line-height: 1.2;
+    border: 1px solid #069;
+    background: #069;
+    color: #fff;
+    font-weight: 100;
+    float: left;
+}
+
+.newsletter-submit:hover{
+    background: #004b70;
+}
+
 
 .yamm .dropdown-menu{
     left: 0;
@@ -98,6 +164,53 @@ p.icon{
     margin-top: -1px;
 }*/
 
+
+/* - - - 
+    
+    Standard Wordpress-Classes
+
+- - - */
+
+.wp-caption{
+    font-size: auto;
+}
+
+.wp-caption-text{
+    font-size: auto;
+}
+
+.sticky{
+    font-size: auto;
+}
+
+.screen-reader-text{
+    font-size: auto;
+}
+
+.gallery-caption{
+    font-size: auto;
+}
+
+.bypostauthor{
+    font-size: auto;
+}
+
+.alignright{
+    font-size: auto;
+}
+
+.alignleft{
+    font-size: auto;
+}
+
+.aligncenter{
+    font-size: auto;
+}
+
+.screen-reader-text{
+    color: red;
+}
+
 @media screen and (max-width : 768px)  {
     .col-sm-4{
         /*width: 50% !important;*/
@@ -106,11 +219,11 @@ p.icon{
 
 @font-face {
     font-family: 'iconfont';
-    src: url('../fonts/iconfont.eot');
-    src: url('../fonts/iconfont.eot?#iefix') format('embedded-opentype'),
-         url('../fonts/iconfont.woff') format('woff'),
-         url('../fonts/iconfont.ttf') format('truetype'),
-         url('../fonts/iconfont.svg#open_sanslight') format('svg');
+    src: url('fonts/iconfont.eot');
+    src: url('fonts/iconfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/iconfont.woff') format('woff'),
+         url('fonts/iconfont.ttf') format('truetype'),
+         url('fonts/iconfont.svg#open_sanslight') format('svg');
     font-weight: normal;
     font-style: normal;
 
