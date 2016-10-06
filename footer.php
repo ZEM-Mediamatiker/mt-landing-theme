@@ -6,7 +6,7 @@
       <div class="container-fluid">
         <h3><?php $options = get_option('mt_theme_options'); echo $options['nl-wdgt-title'];?></h3>
           
-          <form action="" role="form">
+          
 	<fieldset>
 		<div class="form-group">
 			<label for="inputText" class="col-sm-5 control-label">
@@ -42,7 +42,6 @@
             
 		</div>
 	</fieldset>
-</form>
         
         </div>
 
