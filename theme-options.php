@@ -46,11 +46,11 @@ if ( ! isset( $_REQUEST['settings-updated'] ) )
 
 <div class="wrap"> 
 
-<h2 class="themesettings">Theme-Optionen für <?php bloginfo('name'); ?></h2> 
+<h2 class="themesettings">Theme-Optionen f&uuml;r <?php bloginfo('name'); ?></h2> 
 
 <?php if ( false !== $_REQUEST['settings-updated'] ) : ?> 
 <div class="updated fade">
-	<p><strong>Die Änderungen wurden gespeichert.</strong></p>
+	<p><strong>Die &Auml;nderungen wurden gespeichert.</strong></p>
 </div>
 <?php endif; ?>				
 		<style>
@@ -119,6 +119,7 @@ if ( ! isset( $_REQUEST['settings-updated'] ) )
 			<li class="settings-tab" style="float:left;"><a href='#allgemein'>Allgemeine Texte</a></li>
 			<li class="settings-tab" style="float:left;"><a href='#departmenu'>Departement-Menu</a></li>
             <li class="settings-tab" style="float:left;"><a href='#newsletter'>Newsletter</a></li>
+            <li class="settings-tab" style="float:left;"><a href='#suche'>Suche</a></li>
 			<li class="settings-tab" style="float:left;"><a href='#404'>404-Seite</a></li>
 			<li style="clear:both;"></li>
 		</ul>
@@ -180,6 +181,10 @@ if ( ! isset( $_REQUEST['settings-updated'] ) )
       			<tr valign="top">
         			<td>Departementsbezeichnung</td>
         			<td><input id="mt_theme_options[head_departement_title]" class="regular-text" type="text" name="mt_theme_options[head_departement_title]" value="<?php esc_attr_e( $options['head_departement_title'] ); ?>" /></td>
+      			</tr>
+                <tr valign="top">
+        			<td>Platzhalter Suchfunktion</td>
+        			<td><input id="mt_theme_options[head_search_placeholder]" class="regular-text" type="text" name="mt_theme_options[head_search_placeholder]" value="<?php esc_attr_e( $options['head_search_placeholder'] ); ?>" /></td>
       			</tr>
                 
                 <tr valign="top">
@@ -414,19 +419,41 @@ if ( ! isset( $_REQUEST['settings-updated'] ) )
     				
 		</div>
       
+      
+        <div id="suche">
+			
+			<table class="form-table" style="width:75%">
+
+      			<tr valign="top">
+        			<td>Seitentitel im Browserfenster</td>
+        			<td><input id="mt_theme_options[search_tab_title]" class="regular-text" type="text" name="mt_theme_options[search_tab_title]" value="<?php esc_attr_e( $options['search_tab_title'] ); ?>" /></td>
+      			</tr>
+   			
+      		</table>
+    				
+		</div>
+      
 		
 		<div id="404">
 			
 			<table class="form-table" style="width:75%">
-                
-                <tr valign="top">
-					<th>Diese Einstellungen sind noch nicht funktionsfähig.</th>
-      			</tr>
 
       			<tr valign="top">
-        			<td>404 Titel</td>
-        			<td><input id="mt_theme_options[404_title]" class="regular-text" type="text" name="mt_theme_options[404_title]" value="<?php esc_attr_e( $options['404_title'] ); ?>" /></td>
+        			<td>Seitentitel im Browserfenster</td>
+        			<td><input id="mt_theme_options[404_tab_title]" class="regular-text" type="text" name="mt_theme_options[404_tab_title]" value="<?php esc_attr_e( $options['404_tab_title'] ); ?>" /></td>
       			</tr>
+                
+                <tr valign="top">
+        			<td>Titel im Hinweisbalken</td>
+        			<td><input id="mt_theme_options[404_bar_title]" class="regular-text" type="text" name="mt_theme_options[404_bar_title]" value="<?php esc_attr_e( $options['404_bar_title'] ); ?>" /></td>
+      			</tr>
+                
+                <tr valign="top">
+        			<td>Zur&uuml;ck zur Startseite</td>
+        			<td><input id="mt_theme_options[404_back_home]" class="regular-text" type="text" name="mt_theme_options[404_back_home]" value="<?php esc_attr_e( $options['404_back_home'] ); ?>" /></td>
+      			</tr>
+                
+                
                 
                 
       			     			

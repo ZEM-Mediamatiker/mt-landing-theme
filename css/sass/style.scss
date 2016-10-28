@@ -24,7 +24,11 @@ body{
 .active{
     color: #069;
     background: #E5E5E5;
-    padding: 4px 0px !important;
+    //padding: 4px 0px !important;
+}
+
+.nav-tabs.active{
+    padding: 0 !important;
 }
 
 

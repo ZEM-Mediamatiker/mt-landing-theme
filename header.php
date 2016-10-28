@@ -61,10 +61,9 @@
                         </h1>
                     </a>
                     
-                    <form class="form-horizontal form-search pull-right" role="form">
-                        <label for="search-field" class="sr-only">Search:</label>
-                        <input id="search-field" class="form-control search-field" type="text" placeholder="Search">
-                    </form>
+                    
+                    
+                    <?php get_search_form(); ?>
                     
                 </div>
             </header>

@@ -12,15 +12,22 @@ Text Domain: mtlandingtheme
 */
 html {
   border: none;
-  /*margin-top: 0px !important;*/ }
+  /*margin-top: 0px !important;*/ 
+}
 
 body {
-  overflow-x: visible; }
+  overflow-x: visible; 
+}
 
 .active {
   color: #069;
-  background: #E5E5E5;
-  padding: 4px 0px !important; }
+  /*background: #E5E5E5;*/
+  padding: 4px 0px !important; 
+}
+
+.nav-tabs > li.active{
+    padding: 0 !important;
+}
 
 .wp-post-image {
   height: 100%; }
