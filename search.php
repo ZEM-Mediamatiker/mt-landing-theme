@@ -24,18 +24,22 @@
         <div id="content" class="col-sm-12">
             <div class="row">
                 
-                <h2>Suchresultate</h2>
+                <h2>
+                    <?php $options = get_option("mt_theme_options"); echo $options["search_results_title"];?>
+                </h2>
                 
                 <?php if (have_posts()): ?>
                     <p class="search-result">
-                        Suchresultate für "<?php echo $_GET['s']; ?>"
+                        <?php $options = get_option("mt_theme_options"); echo $options["search_results_for"];?> "<?php echo $_GET['s']; ?>"
                     </p>
                 
                 
                 
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs">
-                    <li class="active"><a href="#contentPages" data-toggle="tab">Content pages (28)</a></li>
+                    <li class="active"><a href="#contentPages" data-toggle="tab">
+                        <?php $options = get_option("mt_theme_options"); echo $options["search_results_box"];?>
+                    </a></li>
                 </ul>
                 
                 
@@ -103,7 +107,7 @@
 
 
         <script>
-            document.title = '<?php $options = get_option("mt_theme_options"); echo $options["search_tab_title"];?>';
+            document.title = '<?php $options = get_option("mt_theme_options"); echo $options["search_tab_title"];?> - <?php echo get_bloginfo( "name" ); ?>';
         </script>
             
             
