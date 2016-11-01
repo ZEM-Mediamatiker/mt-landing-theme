@@ -58,5 +58,68 @@
                                     </li>
                                 </ul>
                             </li>
+                            
+                            
+                            
+                            
+                            
+                            <li class="dropdown">
+					<a href="#" id="service-dropdown" class="dropdown-toggle" data-toggle="dropdown"><span class="icon icon--right"></span>Departement: VBS</a>
+					<ul class="dropdown-menu" role="menu" aria-labelledby="service-dropdown">
+						<li class="dropdown-header">
+							<a href="<?php $options = get_option('mt_theme_options'); echo $options['head_bread_armee_url'];?>" target="_blank">
+                                <?php $options = get_option('mt_theme_options'); echo $options['head_bread_armee_text'];?>
+                            </a>
+							<ul>
+								<li><a href="<?php $options = get_option('mt_theme_options'); echo $options['head_bread_ndb_url'];?>" target="_blank">
+                                <?php $options = get_option('mt_theme_options'); echo $options['head_bread_ndb_text'];?>
+                                </a></li>
+                                
+								<li><a href="<?php $options = get_option('mt_theme_options'); echo $options['head_bread_oa_url'];?>" target="_blank">
+                                <?php $options = get_option('mt_theme_options'); echo $options['head_bread_oa_text'];?>
+                                </a></li>
+                                
+                                <li><a href="<?php $options = get_option('mt_theme_options'); echo $options['head_bread_armsu_url'];?>" target="_blank">
+                                <?php $options = get_option('mt_theme_options'); echo $options['head_bread_armsu_text'];?>
+                                </a></li>                                
+                                
+                                <li><a href="<?php $options = get_option('mt_theme_options'); echo $options['head_bread_suto_url'];?>" target="_blank">
+                                <?php $options = get_option('mt_theme_options'); echo $options['head_bread_suto_text'];?>
+                                </a></li>
+                                
+                                
+                                <li><a href="<?php $options = get_option('mt_theme_options'); echo $options['head_bread_babs_url'];?>" target="_blank">
+                                <?php $options = get_option('mt_theme_options'); echo $options['head_bread_babs_text'];?>
+                                </a></li>
+                                
+                                <li><a href="<?php $options = get_option('mt_theme_options'); echo $options['head_bread_baspo_url'];?>" target="_blank">
+                                <?php $options = get_option('mt_theme_options'); echo $options['head_bread_baspo_text'];?>
+                                </a></li>
+                                
+                                <li><a href="<?php $options = get_option('mt_theme_options'); echo $options['head_bread_big_url'];?>" target="_blank">
+                                <?php $options = get_option('mt_theme_options'); echo $options['head_bread_big_text'];?>
+                                </a></li>
+                                
+                                <li><a href="<?php $options = get_option('mt_theme_options'); echo $options['head_bread_gs_url'];?>" target="_blank">
+                                <?php $options = get_option('mt_theme_options'); echo $options['head_bread_gs_text'];?>
+                                </a></li>
+							</ul>
+						</li>
+					</ul>
+				</li>
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
+                            
                         </ul>
                   </nav>

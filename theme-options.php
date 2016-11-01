@@ -117,7 +117,8 @@ if ( ! isset( $_REQUEST['settings-updated'] ) )
 				
     	<ul class="tabs" style="position:relative;margin-top:25px;" style="clear:both">
 			<li class="settings-tab" style="float:left;"><a href='#allgemein'>Allgemeine Texte</a></li>
-			<li class="settings-tab" style="float:left;"><a href='#departmenu'>Departement-Menu</a></li>
+			<li class="settings-tab" style="float:left;"><a href='#bvmenu'>Bundesverwaltung-Menu</a></li>
+            <li class="settings-tab" style="float:left;"><a href='#depmenu'>Departement-Menu</a></li>
             <li class="settings-tab" style="float:left;"><a href='#newsletter'>Newsletter</a></li>
             <li class="settings-tab" style="float:left;"><a href='#suche'>Suche</a></li>
 			<li class="settings-tab" style="float:left;"><a href='#404'>404-Seite</a></li>
@@ -264,7 +265,7 @@ if ( ! isset( $_REQUEST['settings-updated'] ) )
     				
 		</div>		
 		
-		<div id="departmenu">
+		<div id="bvmenu">
 			<table class="form-table" style="width:75%">
                 
 				<tr valign="top">
@@ -397,6 +398,152 @@ if ( ! isset( $_REQUEST['settings-updated'] ) )
 			
 			</table>
 		</div>
+      
+        
+        <div id="depmenu">
+			<table class="form-table" style="width:75%">
+                
+      			<tr valign="top">
+        			<td>Schweizer Armee</td>
+        			<td><input id="mt_theme_options[head_bread_armee_text]" class="regular-text" type="text" name="mt_theme_options[head_bread_armee_text]" value="<?php esc_attr_e( $options['head_bread_armee_text'] ); ?>" /></td>
+      			</tr>
+                
+                <tr valign="top">
+        			<td>Armee-URL</td>
+        			<td><input id="mt_theme_options[head_bread_armee_url]" class="regular-text" type="text" name="mt_theme_options[head_bread_armee_url]" value="<?php esc_attr_e( $options['head_bread_armee_url'] ); ?>" /></td>
+      			</tr>
+                
+                <tr valign="top">
+					<th></th>
+      			</tr>
+                
+                <tr valign="top">
+        			<td>NDB</td>
+        			<td><input id="mt_theme_options[head_bread_ndb_text]" class="regular-text" type="text" name="mt_theme_options[head_bread_ndb_text]" value="<?php esc_attr_e( $options['head_bread_ndb_text'] ); ?>" /></td>
+      			</tr>
+                
+                <tr valign="top">
+        			<td>NDB-URL</td>
+        			<td><input id="mt_theme_options[head_bread_ndb_url]" class="regular-text" type="text" name="mt_theme_options[head_bread_ndb_url]" value="<?php esc_attr_e( $options['head_bread_ndb_url'] ); ?>" /></td>
+      			</tr>
+                
+                <tr valign="top">
+					<th></th>
+      			</tr>
+                
+                <tr valign="top">
+        			<td>OA</td>
+        			<td><input id="mt_theme_options[head_bread_oa_text]" class="regular-text" type="text" name="mt_theme_options[head_bread_oa_text]" value="<?php esc_attr_e( $options['head_bread_oa_text'] ); ?>" /></td>
+      			</tr>
+                
+                <tr valign="top">
+        			<td>OA-URL</td>
+        			<td><input id="mt_theme_options[head_bread_oa_url]" class="regular-text" type="text" name="mt_theme_options[head_bread_oa_url]" value="<?php esc_attr_e( $options['head_bread_oa_url'] ); ?>" /></td>
+      			</tr>
+                
+                <tr valign="top">
+					<th></th>
+      			</tr>
+                
+                <tr valign="top">
+        			<td>armasuisse</td>
+        			<td><input id="mt_theme_options[head_bread_armsu_text]" class="regular-text" type="text" name="mt_theme_options[head_bread_armsu_text]" value="<?php esc_attr_e( $options['head_bread_armsu_text'] ); ?>" /></td>
+      			</tr>
+                
+                <tr valign="top">
+        			<td>armasuisse-URL</td>
+        			<td><input id="mt_theme_options[head_bread_armsu_url]" class="regular-text" type="text" name="mt_theme_options[head_bread_armsu_url]" value="<?php esc_attr_e( $options['head_bread_armsu_url'] ); ?>" /></td>
+      			</tr>
+                
+                <tr valign="top">
+					<th></th>
+      			</tr>
+                
+                <tr valign="top">
+        			<td>swisstopo</td>
+        			<td><input id="mt_theme_options[head_bread_suto_text]" class="regular-text" type="text" name="mt_theme_options[head_bread_suto_text]" value="<?php esc_attr_e( $options['head_bread_suto_text'] ); ?>" /></td>
+      			</tr>
+                
+                <tr valign="top">
+        			<td>suissetopo-URL</td>
+        			<td><input id="mt_theme_options[head_bread_suto_url]" class="regular-text" type="text" name="mt_theme_options[head_bread_suto_url]" value="<?php esc_attr_e( $options['head_bread_suto_url'] ); ?>" /></td>
+      			</tr>
+                
+                <tr valign="top">
+					<th></th>
+      			</tr>
+                
+                <tr valign="top">
+        			<td>BABS</td>
+        			<td><input id="mt_theme_options[head_bread_babs_text]" class="regular-text" type="text" name="mt_theme_options[head_bread_babs_text]" value="<?php esc_attr_e( $options['head_bread_babs_text'] ); ?>" /></td>
+      			</tr>
+                
+                <tr valign="top">
+        			<td>BABS-URL</td>
+        			<td><input id="mt_theme_options[head_bread_babs_url]" class="regular-text" type="text" name="mt_theme_options[head_bread_babs_url]" value="<?php esc_attr_e( $options['head_bread_babs_url'] ); ?>" /></td>
+      			</tr>
+                
+                <tr valign="top">
+					<th></th>
+      			</tr>
+                
+                <tr valign="top">
+        			<td>BASPO</td>
+        			<td><input id="mt_theme_options[head_bread_baspo_text]" class="regular-text" type="text" name="mt_theme_options[head_bread_baspo_text]" value="<?php esc_attr_e( $options['head_bread_baspo_text'] ); ?>" /></td>
+      			</tr>
+                
+                <tr valign="top">
+        			<td>BASPO-URL</td>
+        			<td><input id="mt_theme_options[head_bread_baspo_url]" class="regular-text" type="text" name="mt_theme_options[head_bread_baspo_url]" value="<?php esc_attr_e( $options['head_bread_baspo_url'] ); ?>" /></td>
+      			</tr>
+                
+                <tr valign="top">
+					<th></th>
+      			</tr>
+                
+                <tr valign="top">
+        			<td>BiG</td>
+        			<td><input id="mt_theme_options[head_bread_big_text]" class="regular-text" type="text" name="mt_theme_options[head_bread_big_text]" value="<?php esc_attr_e( $options['head_bread_big_text'] ); ?>" /></td>
+      			</tr>
+                
+                <tr valign="top">
+        			<td>BiG-URL</td>
+        			<td><input id="mt_theme_options[head_bread_big_url]" class="regular-text" type="text" name="mt_theme_options[head_bread_big_url]" value="<?php esc_attr_e( $options['head_bread_big_url'] ); ?>" /></td>
+      			</tr>
+                
+                <tr valign="top">
+					<th></th>
+      			</tr>
+                
+                <tr valign="top">
+        			<td>GS VBS</td>
+        			<td><input id="mt_theme_options[head_bread_gs_text]" class="regular-text" type="text" name="mt_theme_options[head_bread_gs_text]" value="<?php esc_attr_e( $options['head_bread_gs_text'] ); ?>" /></td>
+      			</tr>
+                
+                <tr valign="top">
+        			<td>GS VBS-URL</td>
+        			<td><input id="mt_theme_options[head_bread_gs_url]" class="regular-text" type="text" name="mt_theme_options[head_bread_gs_url]" value="<?php esc_attr_e( $options['head_bread_gs_url'] ); ?>" /></td>
+      			</tr>
+                
+                <tr valign="top">
+					<th></th>
+      			</tr>
+
+                
+			
+			</table>
+		</div>
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
       
         <div id="newsletter">
 			
