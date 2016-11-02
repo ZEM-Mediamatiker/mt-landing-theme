@@ -6,7 +6,7 @@
 					<span class="nav-mobile-logo">
             <img src="<?php echo get_template_directory_uri(); ?>/img/swiss.svg" onerror="this.onerror=null; this.src='img/swiss.png'" alt="Confederatio Helvetica" />
           </span>
-					<h1><a href="#"></a></h1>
+					<h1><a href="#"><?php $options = get_option('mt_theme_options'); echo $options['head_departement_title'];?></a></h1>
 				</div>
 			</div>
             

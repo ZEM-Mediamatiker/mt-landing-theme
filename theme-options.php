@@ -180,7 +180,7 @@ if ( ! isset( $_REQUEST['settings-updated'] ) )
       			</tr>
 
       			<tr valign="top">
-        			<td>Departementsbezeichnung</td>
+        			<td>Seitenbezeichnung</td>
         			<td><input id="mt_theme_options[head_departement_title]" class="regular-text" type="text" name="mt_theme_options[head_departement_title]" value="<?php esc_attr_e( $options['head_departement_title'] ); ?>" /></td>
       			</tr>
                 <tr valign="top">
@@ -259,6 +259,20 @@ if ( ! isset( $_REQUEST['settings-updated'] ) )
                 <tr valign="top">
         			<td>Impressum-URL</td>
         			<td><input id="mt_theme_options[foot_imprint_url]" class="regular-text" type="text" name="mt_theme_options[foot_imprint_url]" value="<?php esc_attr_e( $options['foot_imprint_url'] ); ?>" /></td>
+      			</tr>
+                
+                <tr valign="top">
+					<th>Sonstiges</th>
+      			</tr>
+                
+                <tr valign="top">
+        			<td>Sub-Navigation</td>
+        			<td><input id="mt_theme_options[nav_sub_nav]" class="regular-text" type="text" name="mt_theme_options[nav_sub_nav]" value="<?php esc_attr_e( $options['nav_sub_nav'] ); ?>" /></td>
+      			</tr>
+                
+                <tr valign="top">
+        			<td>Startseite</td>
+        			<td><input id="mt_theme_options[start_page]" class="regular-text" type="text" name="mt_theme_options[start_page]" value="<?php esc_attr_e( $options['start_page'] ); ?>" /></td>
       			</tr>
       			     			
       		</table>
