@@ -402,6 +402,10 @@ if ( ! isset( $_REQUEST['settings-updated'] ) )
         
         <div id="depmenu">
 			<table class="form-table" style="width:75%">
+                <tr valign="top">
+        			<td>Departement VBS</td>
+        			<td><input id="mt_theme_options[head_bread_depvbs_text]" class="regular-text" type="text" name="mt_theme_options[head_bread_depvbs_text]" value="<?php esc_attr_e( $options['head_bread_depvbs_text'] ); ?>" /></td>
+      			</tr>
                 
       			<tr valign="top">
         			<td>Schweizer Armee</td>

@@ -64,7 +64,7 @@
                             
                             
                             <li class="dropdown">
-					<a href="#" id="service-dropdown" class="dropdown-toggle" data-toggle="dropdown"><span class="icon icon--right"></span>Departement: VBS</a>
+					<a href="#" id="service-dropdown" class="dropdown-toggle" data-toggle="dropdown"><span class="icon icon--right"></span><?php $options = get_option('mt_theme_options'); echo $options['head_bread_depvbs_text'];?></a>
 					<ul class="dropdown-menu" role="menu" aria-labelledby="service-dropdown">
 						<li class="dropdown-header">
 							<a href="<?php $options = get_option('mt_theme_options'); echo $options['head_bread_armee_url'];?>" target="_blank">
