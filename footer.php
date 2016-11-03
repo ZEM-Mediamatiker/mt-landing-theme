@@ -56,7 +56,7 @@
                             </a>
                         </li>
                         <li>
-                            <a href="<?php $options = get_option('mt_theme_options'); echo $options['foot_imprint_url'];?>" target="_blank">
+                            <a href="<?php $options = get_option('mt_theme_options'); echo $options['foot_imprint_url'];?>">
                                 <?php $options = get_option('mt_theme_options'); echo $options['foot_imprint_btn'];?>
                             </a>
                         </li>

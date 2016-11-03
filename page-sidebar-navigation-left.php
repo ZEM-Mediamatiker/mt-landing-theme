@@ -4,10 +4,25 @@ Template Name: Sidebar navigation left
 */
 ?>
 
-<?php get_header();?>   
+<?php get_header();?> 
+
+<div class="container-fluid hidden-xs">
+    <div class="row">
+        <div class="col-sm-12">
+    
+        <?php if (function_exists('nav_breadcrumb')) nav_breadcrumb(); ?>
+        </div>
+    </div>
+
+</div>
 
 <div class="container-fluid">
+        
+    
       <div class="row">
+          
+          
+          
                   <div class="col-sm-4 col-md-3 drilldown">
             <a href="#collapseSubNav" data-toggle="collapse" class="collapsed visible-xs"><?php $options = get_option('mt_theme_options'); echo $options['nav_sub_nav'];?></a>
             <div class="drilldown-container">

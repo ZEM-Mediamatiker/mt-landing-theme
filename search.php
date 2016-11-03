@@ -74,7 +74,7 @@
                 <?php else: ?>
 
                 <p class="no-post">
-                    Keine Beiträge gefunden für "<?php echo $_GET['s']; ?>"
+                    <?php $options = get_option("mt_theme_options"); echo $options["no_search_results"];?> "<?php echo $_GET['s']; ?>"
                 </p>
 
                 <?php endif; ?>

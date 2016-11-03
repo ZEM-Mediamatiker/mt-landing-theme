@@ -183,10 +183,6 @@ if ( ! isset( $_REQUEST['settings-updated'] ) )
         			<td>Seitenbezeichnung</td>
         			<td><input id="mt_theme_options[head_departement_title]" class="regular-text" type="text" name="mt_theme_options[head_departement_title]" value="<?php esc_attr_e( $options['head_departement_title'] ); ?>" /></td>
       			</tr>
-                <tr valign="top">
-        			<td>Platzhalter Suchfunktion</td>
-        			<td><input id="mt_theme_options[head_search_placeholder]" class="regular-text" type="text" name="mt_theme_options[head_search_placeholder]" value="<?php esc_attr_e( $options['head_search_placeholder'] ); ?>" /></td>
-      			</tr>
                 
                 <tr valign="top">
 					<th>Introtext</th>
@@ -588,7 +584,12 @@ if ( ! isset( $_REQUEST['settings-updated'] ) )
         <div id="suche">
 			
 			<table class="form-table" style="width:75%">
-
+                
+                <tr valign="top">
+        			<td>Platzhalter Suchfeld</td>
+        			<td><input id="mt_theme_options[head_search_placeholder]" class="regular-text" type="text" name="mt_theme_options[head_search_placeholder]" value="<?php esc_attr_e( $options['head_search_placeholder'] ); ?>" /></td>
+      			</tr>
+                
       			<tr valign="top">
         			<td>Seitentitel im Browserfenster</td>
         			<td><input id="mt_theme_options[search_tab_title]" class="regular-text" type="text" name="mt_theme_options[search_tab_title]" value="<?php esc_attr_e( $options['search_tab_title'] ); ?>" /></td>
@@ -600,13 +601,18 @@ if ( ! isset( $_REQUEST['settings-updated'] ) )
       			</tr>
                 
                 <tr valign="top">
-        			<td>Anzahl Suchresultate</td>
+        			<td>Text Suchresultate</td>
         			<td><input id="mt_theme_options[search_results_for]" class="regular-text" type="text" name="mt_theme_options[search_results_for]" value="<?php esc_attr_e( $options['search_results_for'] ); ?>" /></td>
       			</tr>
                 
                 <tr valign="top">
         			<td>Titel Suchresultatbox</td>
         			<td><input id="mt_theme_options[search_results_box]" class="regular-text" type="text" name="mt_theme_options[search_results_box]" value="<?php esc_attr_e( $options['search_results_box'] ); ?>" /></td>
+      			</tr>
+                
+                <tr valign="top">
+        			<td>Keine Resultate</td>
+        			<td><input id="mt_theme_options[no_search_results]" class="regular-text" type="text" name="mt_theme_options[no_search_results]" value="<?php esc_attr_e( $options['no_search_results'] ); ?>" /></td>
       			</tr>
                 
                 
