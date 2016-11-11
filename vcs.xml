@@ -28,7 +28,7 @@
         </UrlAndUserName>
       </list>
     </option>
-    <option name="cloneParentDir" value="/Applications/MAMP/htdocs/mediathek-wordpress/wp-content/themes" />
+    <option name="cloneParentDir" value="/Applications/MAMP/htdocs/mediathek-wordpress/wp-content/themes/mt-landing-theme" />
   </component>
   <component name="VcsApplicationSettings">
     <option name="PATCH_STORAGE_LOCATION" value="/Applications/MAMP/htdocs/mediathek-wordpress" />
