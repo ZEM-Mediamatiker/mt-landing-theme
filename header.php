@@ -47,8 +47,7 @@
 								"theme_location" => "service-nav"
 							));
 						?>
-                      
-                      
+
                     </section>
                 </div>
 
@@ -60,9 +59,7 @@
                             <?php $options = get_option('mt_theme_options'); echo $options['head_departement_title'];?>
                         </h1>
                     </a>
-                    
-                    
-                    
+
                     <?php get_search_form(); ?>
                     
                 </div>

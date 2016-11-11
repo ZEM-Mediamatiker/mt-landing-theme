@@ -13,9 +13,7 @@
                     <p class="search-result">
                         <?php $options = get_option("mt_theme_options"); echo $options["search_results_for"];?> "<?php echo $_GET['s']; ?>"
                     </p>
-                
-                
-                
+
                 <!-- Nav tabs -->
                 <ul class="nav nav-tabs">
                     <li class="active"><a href="#contentPages" data-toggle="tab">
@@ -59,41 +57,15 @@
                 </p>
 
                 <?php endif; ?>
-                
-                
-	
 	
 </div>
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-                
-            
-            </div> 
-            
-            
-            
-            
-        </div>
 
+            </div> 
+
+        </div>
 
         <script>
             document.title = '<?php $options = get_option("mt_theme_options"); echo $options["search_tab_title"];?> - <?php echo get_bloginfo( "name" ); ?>';
         </script>
-            
-            
-            
-            
-        
 
 <?php get_footer();?> 

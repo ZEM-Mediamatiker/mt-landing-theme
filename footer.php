@@ -1,6 +1,4 @@
-
-
-    <footer>
+ <footer>
 
 
       <div class="container-fluid">
@@ -30,7 +28,6 @@
 	</fieldset>
         
         </div>
-
 
       <address>
                 <span class="hidden-xs"><?php $options = get_option('mt_theme_options'); echo $options['foot_departement_title'];?></span>
