@@ -187,7 +187,4 @@ function nav_breadcrumb() {
  } 
 } 
 
-
-
-
 ?>

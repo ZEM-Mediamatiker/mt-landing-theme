@@ -1,24 +1,5 @@
 <?php get_header();?>   
 
-
-
-
-    
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
-            
         <div class="container-fluid">
                     
         <div id="content" class="col-sm-12">

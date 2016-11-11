@@ -18,21 +18,7 @@
 				<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('Newsletter') )?>				
 				</div>
             
-            
-            
-            
-            
-      					           
-            
-            
-            
 
-            
-            
-            
-            
-            
-            
 			<!--<div class="btn-group col-sm-7">
 				<input type="email" class="btn form-control" id="inputText" placeholder="Ihre E-Mail-Adresse...">
 			
@@ -66,10 +52,7 @@
 
     </footer>
 
-
     <?php wp_footer(); ?>
-
-    
 
     <script src="<?php echo get_template_directory_uri(); ?>/js/vendors.min.js"></script>
     <script src="<?php echo get_template_directory_uri(); ?>/js/polyfill.min.js"></script>
