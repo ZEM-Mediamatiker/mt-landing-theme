@@ -13,7 +13,16 @@
                         <?php query_posts('cat=900'); ?>
 						<?php while ( have_posts() ) : the_post(); ?>
 							<div <?php post_class('col-md-6 col-sm-4 centered'); ?>>
-								<div class="entry-headimg"><?php the_post_thumbnail( 'entry-headimg' ); ?></div>
+								<div class="entry-headimg">
+                                    
+                                    <?php $name = get_post_meta($post->ID, 'ExternalUrl', true);
+                                        if( $name ) { ?>
+                                            <a href="<?php echo $name; ?>"><?php the_post_thumbnail(); ?></a>
+                                        <?php } else {
+                                            the_post_thumbnail();
+                                        } ?>
+                                    
+                                </div>
 								<div class="category-entry-content">
 									
 									<h2><?php the_title(); ?></h2>
