@@ -20,9 +20,7 @@ Template Name: Sidebar navigation left
         
     
       <div class="row">
-          
-          
-          
+
                   <div class="col-sm-4 col-md-3 drilldown">
             <a href="#collapseSubNav" data-toggle="collapse" class="collapsed visible-xs"><?php $options = get_option('mt_theme_options'); echo $options['nav_sub_nav'];?></a>
             <div class="drilldown-container">
@@ -53,14 +51,11 @@ Template Name: Sidebar navigation left
       <?php if (have_posts()) : while (have_posts()) : the_post(); ?>  
 						<h1><?php the_title(); ?></h1> 					
       					<?php the_content(); ?>      					
-      					      					
-      					      					
-      								
+
 					<?php endwhile; endif; ?>
 					
 					<?php wp_link_pages();?> 
 
-      
     </div>
   </div>
           </div>
