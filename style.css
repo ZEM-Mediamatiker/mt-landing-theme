@@ -4,7 +4,7 @@ Theme URI: http://zem.ch
 Description: Wordpress-Theme fuer die Landingpage der Mediathek
 Author: Stefan Eckstein
 Author URI: http://www.zem.ch
-Version: 1.0.3
+Version: 1.0.4
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: featured-images, custom-menu, theme-options, news
@@ -27,6 +27,11 @@ body {
 
 .drilldown-container .active{
     padding: 10px 0px !important;
+}
+
+
+#menu-language-switch li.active{
+    background: #E5E5E5;
 }
 
 .nav-tabs > li.active{
@@ -177,13 +182,21 @@ input:invalid {
   color: red; }
 
 @media screen and (max-width: 768px) {
-  .col-sm-4 {
-    /*width: 50% !important;*/ } 
+  /*.col-sm-4 {
+    width: 50% !important;
+    }*/
     
     .drilldown-container .active{
     padding: 10px 10px !important;
 }
 
+}
+
+@media screen and (min-width: 768px){
+    .col-sm-4 {
+        width: 50% !important;
+    }
+    
 }
     
 

@@ -7,11 +7,12 @@ Template Name: Backend-Page
 <?php get_header();?>   
 
 <div class="container-fluid">
-        
-            <h1 class="page-title centered"><?php echo $lang['MED_WELCOME'];?></h1>
             
         <div id="content" class="col-sm-12">
             <div class="row">
+                <?php if (have_posts()) : while (have_posts()) : the_post(); ?>			
+                    <h1 class="page-title centered"><?php the_content(); ?></h1>
+                <?php endwhile; endif; ?>
                 
                 <?php if ( have_posts() ) : ?>
                         <?php query_posts('cat=901'); ?>
