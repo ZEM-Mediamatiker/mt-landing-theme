@@ -1,6 +1,6 @@
 <?php get_header();?>   
 
-        <div class="container-fluid">
+    <div class="container-fluid">
                     
         <div id="content" class="col-sm-12">
             <div class="row">
@@ -58,14 +58,14 @@
 
                 <?php endif; ?>
 	
-</div>
+            </div>
 
-            </div> 
+        </div> 
 
-        </div>
+    </div>
 
-        <script>
-            document.title = '<?php $options = get_option("mt_theme_options"); echo $options["search_tab_title"];?> - <?php echo get_bloginfo( "name" ); ?>';
-        </script>
+    <script>
+        document.title = '<?php $options = get_option("mt_theme_options"); echo $options["search_tab_title"];?> - <?php echo get_bloginfo( "name" ); ?>';
+    </script>
 
 <?php get_footer();?> 

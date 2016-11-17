@@ -1,6 +1,6 @@
 <?php get_header();?>   
 
-        <div class="container-fluid">
+    <div class="container-fluid">
                     
         <div id="content" class="col-sm-12">
             <div class="row">
@@ -17,6 +17,6 @@
 
         </div>
 
-        </div>
+    </div>
 
 <?php get_footer();?> 

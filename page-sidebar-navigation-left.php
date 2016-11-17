@@ -1,7 +1,7 @@
 <?php
-/*
-Template Name: Sidebar navigation left
-*/
+    /*
+    Template Name: Sidebar navigation left
+    */
 ?>
 
 <?php get_header();?> 

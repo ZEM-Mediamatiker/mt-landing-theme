@@ -1,5 +1,5 @@
 <nav class="nav-main yamm navbar" id="main-navigation">
-        <section class="nav-mobile">
+    <section class="nav-mobile">
 		<div class="table-row">
 			<div class="nav-mobile-header">
 				<div class="table-row">
@@ -30,16 +30,16 @@
             
 			
 		</div>
-	</section>
+    </section>
     
     <?php
-    wp_nav_menu(array(
-        "container" => "nav",
-        "menu_class" => "nav navbar-nav",
-        'items_wrap' =>'<ul class="nav navbar-nav">%3$s</ul>',
-        "theme_location" => "tab-nav"
-    ));
-?>
+        wp_nav_menu(array(
+            "container" => "nav",
+            "menu_class" => "nav navbar-nav",
+            'items_wrap' =>'<ul class="nav navbar-nav">%3$s</ul>',
+            "theme_location" => "tab-nav"
+        ));
+    ?>
 
 </nav>
 
