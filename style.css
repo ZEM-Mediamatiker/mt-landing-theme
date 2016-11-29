@@ -130,6 +130,7 @@ input:invalid {
 .newsletter-email {
     float: left;
     padding: 5px 4px;
+    width: 45%;
     margin-right: 10px;
     line-height: 1.2;
     font-weight: 100;
