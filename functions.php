@@ -1,7 +1,12 @@
 <?php
+/*
+Die Post-Thumbnails ermöglichen es, einem Beitrag oder einer Seite ein Titelbild hinzuzufügen. (https://codex.wordpress.org/Post_Thumbnails)
+*/
+add_theme_support( 'post-thumbnails' );
 
-add_theme_support( 'post-thumbnails' ); 
-
+/*
+über diese Funktion wird dem User im Backend ermöglicht, ein eigenes Hintergrundbild oder -farbe festzulegen. Mit den Parametern kann ein Standard in Form einer Farbe oder eines Bildes gesetzt werden. (https://codex.wordpress.org/Custom_Backgrounds)
+*/
 $bgargs = array(
 	'default-color' => 'ffffff',
 	//'default-image' => '%1$s/img/bg-striped.png',
@@ -9,7 +14,9 @@ $bgargs = array(
 
 add_theme_support( 'custom-background', $bgargs );
 
-
+/*
+Mit dieser Eigenschaft wird die Möglichkeit zum Hinzugeüfgen eines eigenen Headerbildes zum Theme aus dem Wordpress-Backend ermöglicht. Mit dem Argument headerargs werden zusätzliche Einstellungen wie beispielsweise ein Standard-Bild festgelegt. (https://codex.wordpress.org/Custom_Headers)
+*/
 $headerargs = array(
 	'width'         => 252,
     'flex-height'    => true,
@@ -18,8 +25,14 @@ $headerargs = array(
 
 add_theme_support( 'custom-header', $headerargs );
 
+/*
+Die folgende Funktion erlaubt es dem Benutzer, selber einen Titel festzulegen, der im Fenstertitel angezeigt wird. (https://codex.wordpress.org/Title_Tag).
+*/
 add_theme_support( 'title-tag' );
 
+/*
+Hier werden die verschiedenen Menus registriert, so dass diese im Backend erscheinen und Einträge hinzugefügt werden können.
+*/
 register_nav_menus(array(
     "service-nav" => "Service Navigation",
     "lang-nav" => "Language Navigation",
@@ -28,6 +41,9 @@ register_nav_menus(array(
 ));
 
 
+/*
+Mit dieser Funktion werden der Navigation zusätzliche Klassen hinzugefügt, die vom admin.css verwendet werden um die Hauptnavigation zu stylen. So müssen nicht die ganzen Eigenschaften auf die von Wordpress standardmässig verwendeten umgeschrieben werden.
+*/
 function add_classes_on_li($classes, $item, $args) {
   $classes[] = 'dropdown yamm-fw tab-active';
   return $classes;
@@ -43,23 +59,35 @@ function special_nav_class ($classes, $item) {
     return $classes;
 }
 
-
+/*
+Hier wird ein benutzerdefinierter Editor-Style hinzugefügt. Weitere Informationen sind in der Wordpress-Reference zu finden. (https://developer.wordpress.org/reference/functions/add_editor_style/)
+*/
 function wpdocs_theme_add_editor_styles() {
-    add_editor_style( 'cass/custom-editor-style.css' );
+    add_editor_style( 'css/custom-editor-style.css' );
 }
 add_action( 'admin_init', 'wpdocs_theme_add_editor_styles' );
 
-
+/*
+Hier wird die Sektion für die Newsletter-Eintragung im Footer der Webseite registriert. So kann das Widget im Backend vom Theme dieser Sektion zugewiesen werden.
+*/
  register_sidebar(array('name'=>'Newsletter',
  'description'   => 'Newsletter',
  ));
 
+/*
+Die folgende Funktion verhindert, dass das eigene Stylesheet des Newsletter Plugins für Formulare geladen und in den Headbereich eingefügt wird. Es ist das Gegenstück zur wp_enqueue_style()- Funktion in der subscription.php des Plugins, wo die Stylesheet Datei eingelesen wird.
+*/
+
+add_action( 'wp_print_styles', 'deregister_my_styles', 100 );
+ 
+function deregister_my_styles() {
+	wp_deregister_style( 'newsletter-subscription' );
+}
 
 /* 
- * Helper function to return the theme option value. If no value has been saved, it returns $default.
- * Needed because options are saved as serialized strings.
- *
- * This code allows the theme to work without errors if the Options Framework plugin has been disabled.
+Die folgende Funktion ist für das Einfügen der Theme-Options zuständig. Im Vorfeld wird eine Helper-function ausgeführt, dass die Optionen nicht einen Error ausgeben, wenn das Options-Framework Plugin deaktiviert würde. Im folgenden die Beschreibung aus der Wordpress-Reference:
+
+Helper function to return the theme option value. If no value has been saved, it returns $default. Needed because options are saved as serialized strings. This code allows the theme to work without errors if the Options Framework plugin has been disabled.
 */
 
 if ( !function_exists( 'of_get_option' ) ) {
@@ -84,10 +112,9 @@ function of_get_option($name, $default = false) {
 
 require_once ( get_stylesheet_directory() . '/theme-options.php' );
 
-
-
-
-// breadcrumb
+/*
+Die folgende Funktion ist für die Darstellung von Breadcrumbs zuständig.
+*/
 function nav_breadcrumb() {
  
  $delimiter = '&raquo;';

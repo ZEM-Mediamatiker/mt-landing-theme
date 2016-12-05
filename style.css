@@ -4,7 +4,7 @@ Theme URI: http://zem.ch
 Description: Wordpress-Theme fuer die Landingpage der Mediathek
 Author: Stefan Eckstein
 Author URI: http://www.zem.ch
-Version: 1.0.6
+Version: 1.0.7
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Tags: featured-images, custom-menu, theme-options, news
@@ -127,31 +127,70 @@ input:invalid {
   box-shadow: none; 
 }
 
-.tnp-mail{
-    float: left;
-    padding: 5px 4px;
-    width: 45%;
-    margin-right: 10px;
-    line-height: 1.2;
-    font-weight: 100;
-    border-radius: 3px;
-    border: 1px solid #757575;
+/*.tnp-widget-minimal input.tnp-email{
+    float: left !important;
+    padding: 5px 4px !important;
+    width: 45% !important;
+    margin-right: 10px !important;
+    line-height: 1.2 !important;
+    font-weight: 100 !important;
+    background: #fff !important;
+    border-radius: 3px !important;
+    border: 1px solid #757575 !important;
+    margin-right: 0px !important;
 }
 
-.tnp-submit{
-  padding: 5px 10px 6px 10px;
-  border-radius: 3px;
-    margin-left: 10px;
-  line-height: 1.2;
-  border: 1px solid #069;
-  background: #069;
-  color: #fff;
-  font-weight: 100; 
+.tnp-widget-minimal input.tnp-submit{
+    width: .45em .9em !important;
+  padding: 5px 10px 6px 10px !important;
+  border-radius: 3px !important;
+    margin-left: 10px !important;
+  line-height: 1.2 !important;
+  border: 1px solid #069 !important;
+  background: #069 !important;
+  color: #fff !important;
+  font-weight: 100 !important;
 }
 
 .newsletter-submit:hover {
   background: #004b70; 
 }
+*/
+
+
+
+.tnp{
+
+}
+
+.tnp-widget-minimal{
+}
+
+.tnp-widget-minimal input.tnp-email{
+    float: left;
+    padding: 5px 6px 6px 6px;
+    width: 45%;
+    margin-right: 10px;
+    line-height: 1.2;
+    font-weight: 100;
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid #757575;
+    margin-right: 0px;
+}
+
+.tnp-widget-minimal input.tnp-submit{
+    width: .45em .9em;
+    padding: 5px 10px 6px 10px;
+    border-radius: 3px;
+    margin-left: 10px;
+    line-height: 1.2;
+    border: 1px solid #069;
+    background: #069;
+    color: #fff;
+    font-weight: 100;
+}
+
 
 .yamm .dropdown-menu {
   left: 0; 
@@ -161,49 +200,37 @@ input:invalid {
   margin-top: -1px !important; 
 }
 
-/* - - - 
-    
-    Standard Wordpress-Classes
-
-- - - */
+/* 
+Die folgenden Klassen sind Standardklassen, die WordPress als Anforderung an ein Theme stellt, damit das Theme im Themecheck als geprüft erscheint. Auch wenn diese Finktionen nicht eingebunden bzw. aktiviert sind, sollten diese nicht weggelassen werden.
+*/
 .wp-caption {
-  font-size: auto; 
 }
 
 .wp-caption-text {
-  font-size: auto; 
 }
 
 .sticky {
-  font-size: auto; 
 }
 
 .screen-reader-text {
-  font-size: auto; 
 }
 
 .gallery-caption {
-  font-size: auto; 
 }
 
 .bypostauthor {
-  font-size: auto; 
 }
 
 .alignright {
-  font-size: auto; 
 }
 
 .alignleft {
-  font-size: auto; 
 }
 
 .aligncenter {
-  font-size: auto; 
 }
 
 .screen-reader-text {
-  color: red; 
 }
 
 @media screen and (max-width: 768px) {
@@ -218,11 +245,72 @@ input:invalid {
     }    
 }
 
+
+/*
+Einbetten der Iconfont für iTunes, YouTube und die Militärpostkarten.
+*/
 @font-face {
   font-family: 'iconfont';
   src: url("fonts/iconfont.eot");
   src: url("fonts/iconfont.eot?#iefix") format("embedded-opentype"), url("fonts/iconfont.woff") format("woff"), url("fonts/iconfont.ttf") format("truetype"), url("fonts/iconfont.svg#open_sanslight") format("svg");
   font-weight: normal;
   font-style: normal; }
+
+
+/* 
+Die folgenden Eigenschaften sind aus der style.css des Newsletter Plugins übernommen und angepasst, um die Profilseite trotz nicht-laden des Stylesheets formatiert aussehen zu lassen.
+*/
+
+.tnp-profile {
+    font-size: 13px;
+}
+
+.tnp-profile .tnp-field {
+    margin-bottom: 10px;
+    border: 0;
+    padding: 0;
+}
+
+.tnp-profile label {
+    display: block;
+    color: #333;
+    font-size: 14px;
+}
+
+.tnp-profile input[type=text], .tnp-profile input[type=email], .tnp-profile input[type=submit], .tnp-profile select {
+    padding: 5px 6px 6px 6px;
+    margin-right: 10px;
+    line-height: 1.2;
+    font-weight: 100;
+    background: #fff;
+    border-radius: 3px;
+    border: 1px solid #757575;
+    margin-right: 0px;
+}
+
+
+.tnp-profile input[type=checkbox], .tnp-profile input[type=radio] {
+    width: auto;
+    display: inline;
+}
+
+.tnp-profile .tnp-list-label {
+    margin-left: 15px;
+}
+
+.tnp-profile select option {
+    margin-right: 10px;
+}
+
+.tnp-profile input[type=submit] {
+    width: .45em .9em;
+    padding: 5px 10px 6px 10px;
+    border-radius: 3px;
+    line-height: 1.2;
+    border: 1px solid #069;
+    background: #069;
+    color: #fff;
+    font-weight: 100;
+}
 
 /*# sourceMappingURL=style.css.map */
