@@ -77,7 +77,6 @@ Hier wird die Sektion für die Newsletter-Eintragung im Footer der Webseite regi
 /*
 Die folgende Funktion verhindert, dass das eigene Stylesheet des Newsletter Plugins für Formulare geladen und in den Headbereich eingefügt wird. Es ist das Gegenstück zur wp_enqueue_style()- Funktion in der subscription.php des Plugins, wo die Stylesheet Datei eingelesen wird.
 */
-
 add_action( 'wp_print_styles', 'deregister_my_styles', 100 );
  
 function deregister_my_styles() {
